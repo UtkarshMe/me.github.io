@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Home on Utkarsh Maheshwari</title>
-    <link>https://utkarshme.github.io/</link>
-    <description>Recent content in Home on Utkarsh Maheshwari</description>
+    <title>Blogs on Utkarsh Maheshwari</title>
+    <link>https://utkarshme.github.io/blog/</link>
+    <description>Recent content in Blogs on Utkarsh Maheshwari</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 16 Oct 2017 18:59:21 +0530</lastBuildDate>
+    <lastBuildDate>Tue, 13 Jun 2017 11:11:22 +0530</lastBuildDate>
     
-	<atom:link href="https://utkarshme.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://utkarshme.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
