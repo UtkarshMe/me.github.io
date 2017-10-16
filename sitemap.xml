@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://utkarshme.github.io/</loc>
+    <lastmod>2017-10-16T18:59:21+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://utkarshme.github.io/about/</loc>
+    <lastmod>2017-10-16T18:54:02+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://utkarshme.github.io/blog/the-internship-at-aiims-bhopal/</loc>
+    <lastmod>2017-06-13T11:11:22+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://utkarshme.github.io/blog/learn-vim-the-fun-way/</loc>
+    <lastmod>2017-04-27T10:41:45+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://utkarshme.github.io/blog/first-accepted-patch/</loc>
+    <lastmod>2017-03-13T05:55:22+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://utkarshme.github.io/blog/its-a-monarchy/</loc>
+    <lastmod>2017-03-05T03:15:20+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://utkarshme.github.io/blog/first-pull-request/</loc>
+    <lastmod>2017-03-04T08:08:26+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://utkarshme.github.io/blog/elementary-my-dear-watson/</loc>
+    <lastmod>2017-02-10T10:35:41+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://utkarshme.github.io/blog/first-release/</loc>
+    <lastmod>2017-02-04T11:48:22+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://utkarshme.github.io/blog/initial-commit/</loc>
+    <lastmod>2017-02-03T02:38:18+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://utkarshme.github.io/blog/</loc>
+    <lastmod>2017-06-13T11:11:22+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://utkarshme.github.io/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://utkarshme.github.io/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+</urlset>
