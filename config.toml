@@ -7,7 +7,6 @@ title = "Utkarsh Maheshwari"
 author = "Utkarsh Maheshwari"
 
 theme = "cocoa"
-avatar = "images/profile.png"
 sectionPagesMenu = "main"
 
 [taxonomies]
@@ -15,6 +14,7 @@ sectionPagesMenu = "main"
     tag = "tags"
 
 [params]
+    avatar = "img/profile.jpg"
     latestpostscount       = 5                             # how many posts to display on the home page
     i18n_flags             = false                         # whether to display small country flags for available translations
     author                 = "Utkarsh Maheshwari"
@@ -23,7 +23,7 @@ sectionPagesMenu = "main"
     dateformfull           = "Mon Jan 2 2006 15:04:05 MST"
     description            = "Coding is an art and I'm a purist"
     email                  = "utkarshme96@gmail.com"
-    faviconfile            = "images/favicon.ico"
+    faviconfile            = "img/favicon.ico"
     highlightjs            = true
     lang                   = "en"
     noshowreadtime         = false                         # if true, don't show "<x> minutes read" in posts
