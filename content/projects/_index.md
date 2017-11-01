@@ -1,0 +1,155 @@
+---
+title: "Projects"
+date: 2017-11-01T20:36:32+05:30
+---
+
+
+<br/>
+<div style="float:right;text-align:right">
+    _November, 2017<br/>In progress_
+</div>
+
+Keylogger
+---
+An extremely lightweight keylogger for Linux environment written in C. Logs the
+output to the screen or any file as specified by the user.
+[Browse source code](https://github.com/UtkarshMe/keylogger)
+
+`C` | `CLI` | `Linux`
+
+
+
+<br/>
+<div style="float:right">
+    _October, 2017_
+</div>
+
+Resume LaTeX
+---
+A templating engine for generating resumes in LaTeX with built-in two themes
+and ability to extend to more themes.
+[Browse source code](https://github.com/UtkarshMe/ResumeLaTeX)
+
+`LaTeX` | `TeX`
+
+
+
+<br/>
+<div style="float:right;text-align:right">
+    _September, 2017<br/>In progress_
+</div>
+
+PacAadmi
+---
+A _ncurses_ based clone of the famous Pac-man game written from scratch in C.
+[Browse source code](https://github.com/UtkarshMe/PacAadmi)
+
+`C` | `ncurses` | `CMake`
+
+
+
+<br/>
+<div style="float:right">
+    _September, 2017_
+</div>
+
+GitGrapher
+---
+A very tiny bash script to fill up the GitHub contributions graph with at least one commit everyday.
+[Browse source code](https://github.com/UtkarshMe/GitGrapher)
+
+`Bash` | `Git` | `GitHub`
+
+
+
+<br/>
+<div style="float:right;text-align:right">
+    _Summer, 2017_
+</div>
+
+AIIMS Bhopal Medical App
+---
+An web app for facilitating a better doctor-patient interaction and making the
+procedure more open and transparent, created during the summer internship after
+2nd year. Worked on the back-end.
+[Browse source code](https://github.com/UtkarshMe/aiims-api)
+
+`NodeJS` | `ExpressJS` | `MongoDB` | `MochaJS` | `REST api`
+
+
+
+<br/>
+<div style="float:right;text-align:right">
+    _Fall, 2017<br/>In progress_
+</div>
+
+Student Welfare Division website
+---
+Worked on the back-end for website for the SWD website, specifically on
+database schema, data porting and authentication/authorization.
+[Browse source code](https://github.com/OSDLabs/swd)
+
+`NodeJS` | `GraphQL` | `ReactJS` | `Json Web Tokens` | `JavaScript`
+
+
+
+<br/>
+<div style="float:right;text-align:right">
+    _Fall, 2017<br/>In progress_
+</div>
+
+A Vim Story
+---
+A _ncurses_ based 2D (_bomberman_-like) game to help ease into the famous steep
+learning curve for the Vi/Vim text editor. The game uses the Vim key bindings
+to advance to the next level.
+[Browse source code](https://github.com/UtkarshMe/a-vim-story)
+
+`C` | `ncurses` | `CMake` | `Vi/Vim`
+
+
+
+<br/>
+<div style="float:right">
+    _February, 2017_
+</div>
+
+Bitsnet Login
+---
+A full-featured, command line application for logging into the captive portal at
+BITS, Goa with native notification support which logs in only when user is not
+connected to the internet.
+[Browse source code](https://github.com/UtkarshMe/BitsnetLogin)
+
+`Bash` | `CLI` | `Libnotify` | `Captive portal` | `cURL` | `Man page`
+
+
+
+<br/>
+<div style="float:right">
+    _December, 2016_
+</div>
+
+Tic-Toc
+---
+The web app for a cryptic hunt organized during the BITS Goa cultural fest --
+Waves. It is essentially a question and answer based quiz.
+[Browse source code](https://github.com/UtkarshMe/TicToc)
+
+`NodeJS` | `ExpressJS` | `MongoDB` | `PassportJS` | `Bootstrap`
+
+
+
+<br/>
+<div style="float:right">
+    _December, 2015_
+</div>
+
+Wolf of Wall Street
+---
+An online stock simulation game created during the BITS Goa tech fest -- Quark.
+Since it was written in my first year in college, it's not a project that I'm
+proud of.
+[Browse source code](https://github.com/UtkarshMe/WolfOfWallstreet)
+
+`PHP` | `SQL` | `HTML` | `CSS`
