@@ -3,6 +3,9 @@ title: "Projects"
 date: 2017-11-01T20:36:32+05:30
 ---
 
+### My GitHub contributions
+<img src="http://ghchart.rshah.org/utkarshme" alt="Utkarsh's GitHub chart" />
+
 
 <br/>
 <div style="float:right;text-align:right">
