@@ -5,6 +5,7 @@ baseURL = "https://utkarshme.github.io"
 languageCode = "en-us"
 title = "Utkarsh Maheshwari"
 author = "Utkarsh Maheshwari"
+googleAnalytics     = "UA-109205422-1"
 
 theme = "cocoa"
 sectionPagesMenu = "main"
