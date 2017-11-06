@@ -4,7 +4,7 @@ date: 2017-02-03T02:38:18+05:30
 ---
 
 So the customary **Hello world** was in line. There. I said it. The program
-seems to be working fine. Anyways, this first post is basically for describing
+seems to be working fine. Anyway, this first post is basically for describing
 what and why. The motivation and reason for this is not a very grand one, but
 nonetheless important. This blog serves as a journal, for me and for whoever it
 may concern, of stuff I explore and venture into during my days on this planet
