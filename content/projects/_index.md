@@ -12,6 +12,20 @@ date: 2017-11-01T20:36:32+05:30
     _November, 2017<br/>In progress_
 </div>
 
+Synergy
+---
+An app to sync your phone and GNU/Linux notifications with each other. The app
+is extensible with plugins implemented as Dynamic Shared Objects.
+[Browse source code](https://github.com/UtkarshMe/Synergy-linux)
+
+`C` | `CMake` | `Plugins` | `Pthreads` | `Shared Library`
+
+
+<br/>
+<div style="float:right;text-align:right">
+    _November, 2017<br/>In progress_
+</div>
+
 Keylogger
 ---
 An extremely lightweight keylogger for Linux environment written in C. Logs the
