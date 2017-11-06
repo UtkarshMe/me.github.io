@@ -43,3 +43,18 @@ sectionPagesMenu = "main"
     weight = 2
     identifier = "blog"
     url = "/blog/"
+[[menu.main]]
+    name = "About"
+    weight = 3
+    identifier = "about"
+    url = "/about"
+[[menu.main]]
+    name = "Projects"
+    weight = 4
+    identifier = "projects"
+    url = "/projects"
+[[menu.main]]
+    name = "Resume"
+    weight = 99
+    identifier = "resume"
+    url = "/resume/resume.pdf"
