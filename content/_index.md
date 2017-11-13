@@ -5,8 +5,8 @@ date: 2017-10-16T18:59:21+05:30
 
 > Long nights and a laptop. And a cup of coffee. And WiFi. And music.
 
-This blog is about the adventures of a boy who _slayed the dragon and brought
-peace to the land and ocean, far and wide_.
+This blog is about the adventures of a boy who slayed the dragon and brought
+peace to the land and ocean, far and wide.
 
 Nah, just kidding. It's an ordinary blog about the activities of an ordinary
 guy. By an ordinary guy. Nothing special.
