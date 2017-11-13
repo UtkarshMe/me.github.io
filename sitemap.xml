@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://utkarshme.github.io/blog/implementing-a-plugin-architecture-in-c/</loc>
+    <lastmod>2017-11-13T15:29:17+05:30</lastmod>
+  </url>
+  
+  <url>
     <loc>https://utkarshme.github.io/projects/</loc>
     <lastmod>2017-11-01T20:36:32+05:30</lastmod>
   </url>
@@ -64,7 +69,7 @@
   
   <url>
     <loc>https://utkarshme.github.io/blog/</loc>
-    <lastmod>2017-10-16T18:04:46+05:30</lastmod>
+    <lastmod>2017-11-13T15:29:17+05:30</lastmod>
     <priority>0</priority>
   </url>
   

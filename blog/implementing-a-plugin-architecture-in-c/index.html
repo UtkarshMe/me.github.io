@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer">
+<meta name="author" content="Utkarsh Maheshwari">
+<meta name="description" content="Recently I was working on a project where I had decided to make the application extensible by use of plugins (or add-ons). A plugin is a piece of code which is not part of the core app and is not required for proper working of it; it provides with additional functionality and allows third-party developers to extend the app.
+The developer who makes the plugin infrastructure is required to provide a way to:">
+
+<meta property="og:title" content="Implementing a plugin architecture in C" />
+<meta property="og:description" content="Recently I was working on a project where I had decided to make the application extensible by use of plugins (or add-ons). A plugin is a piece of code which is not part of the core app and is not required for proper working of it; it provides with additional functionality and allows third-party developers to extend the app.
+The developer who makes the plugin infrastructure is required to provide a way to:" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://utkarshme.github.io/blog/implementing-a-plugin-architecture-in-c/" />
+
+
+
+<meta property="article:published_time" content="2017-11-13T15:29:17&#43;05:30"/>
+
+<meta property="article:modified_time" content="2017-11-13T15:29:17&#43;05:30"/>
+
+
+
+
+
+
+
+
+
+
+
+
+<title>
+
+
+     Implementing a plugin architecture in C 
+
+</title>
+<link rel="canonical" href="https://utkarshme.github.io/blog/implementing-a-plugin-architecture-in-c/">
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/styles/default.min.css">
+
+
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Ubuntu+Mono:400,400i,700,700i|Raleway:500">
+
+
+
+    
+    <link rel="stylesheet" href="/css/reset.css?t=2017-11-13%2022%3a36%3a13.303177033%20%2b0530%20IST%20m%3d%2b0.055027892">
+    <link rel="stylesheet" href="/css/pygments.css?t=2017-11-13%2022%3a36%3a13.303177033%20%2b0530%20IST%20m%3d%2b0.055027892">
+    <link rel="stylesheet" href="/css/main.css?t=2017-11-13%2022%3a36%3a13.303177033%20%2b0530%20IST%20m%3d%2b0.055027892">
+    
+
+
+
+
+<link rel="shortcut icon"
+
+    href="/img/favicon.ico"
+
+>
+
+
+
+
+
+
+
+
+</head>
+
+
+<body lang="en">
+
+<section class="header">
+    <div class="container">
+        <div class="content">
+            
+                
+                
+                
+                
+                
+                    
+                
+                    
+                
+                
+                <a href="/"><img class="avatar" src="/img/profile.jpg" srcset="https://utkarshme.github.io/img/profile.jpg 1x"></a>
+            
+            <a href="/"><div class="name">Utkarsh Maheshwari</div></a>
+            
+              <h3 class="self-intro">Coding is an art and I&#39;m a purist</h3>
+            
+            <nav>
+                <ul>
+                    
+                        <li class="nav-home"><a href="https://utkarshme.github.io/"><span>Home</span></a></li>
+                    
+                        <li class="nav-blog"><a href="https://utkarshme.github.io/blog/"><span>Blog</span></a></li>
+                    
+                        <li class="nav-about"><a href="https://utkarshme.github.io/about"><span>About</span></a></li>
+                    
+                        <li class="nav-projects"><a href="https://utkarshme.github.io/projects"><span>Projects</span></a></li>
+                    
+                        <li class="nav-resume"><a href="https://utkarshme.github.io/resume/resume.pdf"><span>Resume</span></a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+    </div>
+</section>
+
+<section class="icons">
+    <div class="container">
+        <div class="content">
+
+        
+            <a href="https://github.com/UtkarshMe" target="_blank" rel="noopener"><img class="icon" src="/img/github.svg" alt="github" /></a>
+        
+
+        
+            <a href="https://twitter.com/utkarshme96" target="_blank" rel="noopener"><img class="icon" src="/img/twitter.svg" alt="twitter" /></a>
+        
+
+        
+
+        
+
+        
+            <a href="https://www.linkedin.com/in/utkarshme96/" target="_blank" rel="noopener"><img class="icon" src="/img/linkedin.svg" alt="linkedin" /></a>
+        
+
+        
+
+        
+            
+        
+
+        
+
+        
+            <a href="mailto:utkarshme96@gmail.com"><img class="icon" src="/img/email.svg" alt="email" /></a>
+        
+
+        
+            <a href="https://utkarshme.github.io/index.xml"><img class="icon" src="/img/rss.svg" alt="rss" /></a>
+        
+        
+        </div>
+    </div>
+</section>
+
+
+<section class="main post non-narrow zero-top-spacing">
+    <div class="container">
+        <div class="content">
+            <div class="front-matter">
+                <div class="title-container">
+                    <div class="page-heading">
+
+    Implementing a plugin architecture in C
+
+</div>
+
+                    <div class="initials"><a href="https://utkarshme.github.io"></a></div>
+                </div>
+                <div class="meta">
+                    
+                    <div class="date" title='Mon Nov 13 2017 15:29:17 IST'>Nov 13, 2017</div>
+                    
+                    
+		    <div class="reading-time"><div class="middot"></div>3 minutes read</div>
+                    
+                </div>
+            </div>
+            <div class="markdown">
+                
+
+<p>Recently I was working on <a href="https://github.com/UtkarshMe/Synergy-linux">a
+project</a> where I had decided to
+make the application extensible by use of plugins (or add-ons). A plugin is a
+piece of code which is not part of the core app and is not required for proper
+working of it; it provides with additional functionality and allows third-party
+developers to extend the app.</p>
+
+<p>The developer who makes the plugin infrastructure is required to provide a way
+to:</p>
+
+<ul>
+<li>Look for plugins</li>
+<li>Load them</li>
+<li>Run them at appropriate time</li>
+</ul>
+
+<p>One way to implement a plugin system in a pre-compiled language like C is by
+the use of a <a href="https://en.wikipedia.org/wiki/Library_(computing)#Shared_libraries">shared object</a>
+(or shared library). A dynamically linked shared object (also called a DSO) can
+be written and compiled independent of the core application and the binary thus
+produced can be placed in a pre-decided folder (like <code>/plugins</code>) where the core
+app can discover and load it.</p>
+
+<h4 id="loading-plugins">Loading plugins</h4>
+
+<p>The app looks for plugins in a specific location (say <code>/plugins</code>) and tries to load the initialization function for each plugin. We have keep a pre-defined format to denote the initialization function for each plugin such as:</p>
+
+<pre><code class="language-c">void plugin_PLUGIN_NAME_init(info_t *info);
+/* this is just one way to declare an init function. */
+</code></pre>
+
+<p><code>info_t</code> can be defined however you like. For this example I&rsquo;m gonna define it as:</p>
+
+<pre><code class="language-c">/* a struct to store the info to be passed to the plugin */
+typedef struct {
+    int some_info;
+} into_t;
+</code></pre>
+
+<p>The core app loads the plugin with the <code>dlopen</code> function declared in the <code>&lt;dlfcn.h&gt;</code> header. <code>dlopen</code> function is used in the core app as:</p>
+
+<pre><code class="language-c">void *handle;
+char plugin_path[] = &quot;./plugins/myplugin.so&quot;;
+
+handle = dlopen(plugin_path, RTLD_NOW);
+/* check man(3) dlopen for more info on this */
+
+if (!handle) {
+    /* error */
+}
+</code></pre>
+
+<p>This returns a &lsquo;handle&rsquo; for the object which is used with other functions to operate on the shared object.</p>
+
+<p>The initialization function of the plugin can be executed as:</p>
+
+<pre><code class="language-c">/* define the init function pointer type */
+typedef void (*plugin_init_func_t)(info_t *);
+
+char function_name[] = &quot;plugin_myplugin_init&quot;;
+plugin_init_func_t plugin_init_func;
+
+/* get the address of the init function */
+plugin_init_func = (plugin_init_func_t) (__intptr_t)
+    dlsym(handle, function_name);
+
+if (plugin_init_func == NULL) {
+    /* error */
+}
+
+/* run the function */
+(*plugin_init_func)(info);
+</code></pre>
+
+<p><strong>Important note</strong>: The core app must be compiled with the linker flag <code>-ldl</code></p>
+
+<h3 id="writing-plugins">Writing plugins</h3>
+
+<p>The plugins must have the initialization function as mentioned before. These function can be used to attach handler functions for events or hooks. The events must be defined by the core app and the ability to attach handlers must be provided to the plugins as part of the plugins development API.</p>
+
+<pre><code class="language-c">/* an arbitrary event handler
+ * it is generally a good idea to append the function name with the plugin
+ * name to avoid conflict */
+void myplugin_some_handler(info_t *info)
+{
+    /* do whatever you intend to */
+}
+
+/* the init function */
+void plugin_myplugin_init(info_t *info)
+{
+    /* play with info passed */
+    info -&gt; some_info += 20;
+
+    /* attach handlers to events */
+    event_attach(EVENT_NAME, myplugin_some_handler);
+}
+</code></pre>
+
+<p><strong>Important note</strong>: The plugins must be compiled with the compile-time flag <code>-fpic</code> and the linker flag <code>-shared</code></p>
+
+<p>You can find my implementation of events and plugins in <a href="https://github.com/UtkarshMe/Synergy-linux">this project</a>.</p>
+
+                <br>
+		<p><a href="/blog/">Back to posts</a></p>
+            </div>
+            <br>
+            <div class="disqus">
+                
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+
+
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-109205422-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='//www.google-analytics.com/analytics.js'></script>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/highlight.min.js"></script>
+  
+
+  <script type="text/javascript">
+    hljs.initHighlightingOnLoad();
+  </script>
+
+
+
+
+
+</body>
+</html>
+
