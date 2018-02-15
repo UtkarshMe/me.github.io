@@ -12,6 +12,16 @@
     
     
     <item>
+      <title>Learning Flex</title>
+      <link>https://utkarshme.github.io/blog/learning-flex/</link>
+      <pubDate>Wed, 14 Feb 2018 17:56:46 +0530</pubDate>
+      
+      <guid>https://utkarshme.github.io/blog/learning-flex/</guid>
+      <description>So we had this assignment for our Compilers Construction course to write a program to generated beautified HTML file for a given C program. The stupid approach is to write a lexical analyzer from scratch with might take ages. The intelligent (and accepted) approach is to use a lexical analyzer generator and this is where Flex comes into picture.
+Flex is a FOSS alternative to the POSIX lexical analyzer generator Lex and generates a lexical analyzer program from the vocabulary you specify for the language you&amp;rsquo;re writing a compiler for.</description>
+    </item>
+    
+    <item>
       <title>Implementing a plugin architecture in C</title>
       <link>https://utkarshme.github.io/blog/implementing-a-plugin-architecture-in-c/</link>
       <pubDate>Mon, 13 Nov 2017 15:29:17 +0530</pubDate>

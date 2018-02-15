@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer">
+<meta name="author" content="Utkarsh Maheshwari">
+<meta name="description" content="So we had this assignment for our Compilers Construction course to write a program to generated beautified HTML file for a given C program. The stupid approach is to write a lexical analyzer from scratch with might take ages. The intelligent (and accepted) approach is to use a lexical analyzer generator and this is where Flex comes into picture.
+Flex is a FOSS alternative to the POSIX lexical analyzer generator Lex and generates a lexical analyzer program from the vocabulary you specify for the language you&rsquo;re writing a compiler for.">
+
+<meta property="og:title" content="Learning Flex" />
+<meta property="og:description" content="So we had this assignment for our Compilers Construction course to write a program to generated beautified HTML file for a given C program. The stupid approach is to write a lexical analyzer from scratch with might take ages. The intelligent (and accepted) approach is to use a lexical analyzer generator and this is where Flex comes into picture.
+Flex is a FOSS alternative to the POSIX lexical analyzer generator Lex and generates a lexical analyzer program from the vocabulary you specify for the language you&rsquo;re writing a compiler for." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://utkarshme.github.io/blog/learning-flex/" />
+
+
+
+<meta property="article:published_time" content="2018-02-14T17:56:46&#43;05:30"/>
+
+<meta property="article:modified_time" content="2018-02-14T17:56:46&#43;05:30"/>
+
+
+
+
+
+
+
+
+
+
+
+
+<title>
+
+
+     Learning Flex 
+
+</title>
+<link rel="canonical" href="https://utkarshme.github.io/blog/learning-flex/">
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/styles/default.min.css">
+
+
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Ubuntu+Mono:400,400i,700,700i|Raleway:500">
+
+
+
+    
+    <link rel="stylesheet" href="/css/reset.css?t=2018-02-15%2018%3a16%3a44.327190948%20%2b0530%20IST%20m%3d%2b0.168177903">
+    <link rel="stylesheet" href="/css/pygments.css?t=2018-02-15%2018%3a16%3a44.327190948%20%2b0530%20IST%20m%3d%2b0.168177903">
+    <link rel="stylesheet" href="/css/main.css?t=2018-02-15%2018%3a16%3a44.327190948%20%2b0530%20IST%20m%3d%2b0.168177903">
+    
+
+
+
+
+<link rel="shortcut icon"
+
+    href="/img/favicon.ico"
+
+>
+
+
+
+
+
+
+
+
+</head>
+
+
+<body lang="en">
+
+<section class="header">
+    <div class="container">
+        <div class="content">
+            
+                
+                
+                
+                
+                
+                    
+                
+                    
+                
+                
+                <a href="/"><img class="avatar" src="/img/profile.jpg" srcset="https://utkarshme.github.io/img/profile.jpg 1x"></a>
+            
+            <a href="/"><div class="name">Utkarsh Maheshwari</div></a>
+            
+              <h3 class="self-intro">Coding is an art and I&#39;m a purist</h3>
+            
+            <nav>
+                <ul>
+                    
+                        <li class="nav-home"><a href="https://utkarshme.github.io/"><span>Home</span></a></li>
+                    
+                        <li class="nav-blog"><a href="https://utkarshme.github.io/blog/"><span>Blog</span></a></li>
+                    
+                        <li class="nav-about"><a href="https://utkarshme.github.io/about"><span>About</span></a></li>
+                    
+                        <li class="nav-projects"><a href="https://utkarshme.github.io/projects"><span>Projects</span></a></li>
+                    
+                        <li class="nav-resume"><a href="https://utkarshme.github.io/resume/resume.pdf"><span>Resume</span></a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+    </div>
+</section>
+
+<section class="icons">
+    <div class="container">
+        <div class="content">
+
+        
+            <a href="https://github.com/UtkarshMe" target="_blank" rel="noopener"><img class="icon" src="/img/github.svg" alt="github" /></a>
+        
+
+        
+            <a href="https://twitter.com/utkarshme96" target="_blank" rel="noopener"><img class="icon" src="/img/twitter.svg" alt="twitter" /></a>
+        
+
+        
+
+        
+
+        
+            <a href="https://www.linkedin.com/in/utkarshme96/" target="_blank" rel="noopener"><img class="icon" src="/img/linkedin.svg" alt="linkedin" /></a>
+        
+
+        
+
+        
+            
+        
+
+        
+
+        
+            <a href="mailto:utkarshme96@gmail.com"><img class="icon" src="/img/email.svg" alt="email" /></a>
+        
+
+        
+            <a href="https://utkarshme.github.io/index.xml"><img class="icon" src="/img/rss.svg" alt="rss" /></a>
+        
+        
+        </div>
+    </div>
+</section>
+
+
+<section class="main post non-narrow zero-top-spacing">
+    <div class="container">
+        <div class="content">
+            <div class="front-matter">
+                <div class="title-container">
+                    <div class="page-heading">
+
+    Learning Flex
+
+</div>
+
+                    <div class="initials"><a href="https://utkarshme.github.io"></a></div>
+                </div>
+                <div class="meta">
+                    
+                    <div class="date" title='Wed Feb 14 2018 17:56:46 IST'>Feb 14, 2018</div>
+                    
+                    
+		    <div class="reading-time"><div class="middot"></div>2 minutes read</div>
+                    
+                </div>
+            </div>
+            <div class="markdown">
+                <p>So we had this <a href="https://github.com/UtkarshMe/Flexing">assignment</a> for our <em>Compilers Construction</em> course to write a program to generated beautified HTML file for a given C program. The stupid approach is to write a lexical analyzer from scratch with might take ages. The intelligent (and accepted) approach is to use a lexical analyzer generator and this is where <em>Flex</em> comes into picture.</p>
+
+<p>Flex is a FOSS alternative to the POSIX lexical analyzer generator <em>Lex</em> and generates a lexical analyzer program from the vocabulary you specify for the language you&rsquo;re writing a compiler for.</p>
+
+<p>There are two parts to Flex, the definitions or <em>labels</em> and the translations or <em>rules</em>. The rules section uses labels to simplify the rules. Both use <em>regex</em> heavily (duh!).</p>
+
+<p>A simple label looks like this. This puts the label <code>oreo</code> on all occurrences of the regex <code>(cat)</code> in the input.</p>
+
+<pre><code class="language-c">oreo        (cat)
+</code></pre>
+
+<p>A simple rules for the same looks like this. This replaces all occurrences of the label <code>oreo</code> in the input to <code>Oreo, the cat</code> in the output. The rules section is enclosed in two <code>%%</code>.</p>
+
+<pre><code class="language-c">{oreo}      { printf (&quot;Oreo, the cat&quot;); }
+</code></pre>
+
+<p>It should also have a <code>main</code> function which calls the <code>yylex()</code> function. A very simple flex file might look like this:</p>
+
+<pre><code class="language-c">/* Filename: simple.lex */
+%option noyywrap
+
+%{
+/* I guess we do have to put labels on everything */
+oreo        (cat)
+adjective   (good|bad)
+%}
+
+%%
+%{
+/* You might not like them, but you need to have rules */
+{oreo}      { printf (&quot;Oreo, the cat&quot;); }
+{adjective} { printf (&quot;lazy&quot;); }
+%}
+%%
+
+int main (int argc, char *argv[]) {
+    yylex();
+    return 0;
+}
+</code></pre>
+
+<p>Compile it by:</p>
+
+<pre><code class="language-bash">flex simple.lex     # this will create lex.yy.c
+gcc lex.yy.c        # this will create a.out
+./a.out
+</code></pre>
+
+<p>On executing the <code>a.out</code> file and entering the input, you&rsquo;ll find the following output.</p>
+
+<pre><code class="language-text">input: this is cat
+output: this is Oreo, the cat
+
+input: cat is good.
+output: Oreo, the cat is lazy.
+
+input: nothing to do
+output: nothing to do
+</code></pre>
+
+<p>You can find the code for the assignment <a href="https://github.com/UtkarshMe/Flexing">here</a>.</p>
+
+                <br>
+		<p><a href="/blog/">Back to posts</a></p>
+            </div>
+            <br>
+            <div class="disqus">
+                
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+
+
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-109205422-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='//www.google-analytics.com/analytics.js'></script>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/highlight.min.js"></script>
+  
+
+  <script type="text/javascript">
+    hljs.initHighlightingOnLoad();
+  </script>
+
+
+
+
+
+</body>
+</html>
+
