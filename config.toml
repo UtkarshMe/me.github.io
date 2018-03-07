@@ -61,4 +61,4 @@ sectionPagesMenu = "main"
     name = "Resume"
     weight = 99
     identifier = "resume"
-    url = "/resume/resume.pdf"
+    url = "resume.pdf"
