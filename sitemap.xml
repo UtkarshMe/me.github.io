@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://utkarshme.github.io/blog/milking-the-yacc/</loc>
+    <lastmod>2018-03-16T15:39:35+05:30</lastmod>
+  </url>
+  
+  <url>
     <loc>https://utkarshme.github.io/blog/learning-flex/</loc>
     <lastmod>2018-02-14T17:56:46+05:30</lastmod>
   </url>
@@ -74,7 +79,7 @@
   
   <url>
     <loc>https://utkarshme.github.io/blog/</loc>
-    <lastmod>2018-02-14T17:56:46+05:30</lastmod>
+    <lastmod>2018-03-16T15:39:35+05:30</lastmod>
     <priority>0</priority>
   </url>
   

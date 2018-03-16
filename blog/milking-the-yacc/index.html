@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer">
+<meta name="author" content="Utkarsh Maheshwari">
+<meta name="description" content="So we had another assignment for our compilers construction course. We had already worked with lexical analyzers so this was a time for grammar parser generators. We had to create a BibTeX parser using Yacc/Bison. Here is a short introduction for anyone interested.
+Yacc stands for Yet Another Compiler Compiler. It is a Look-ahead, Left-to-right parser generator. To know more about what parsers are, refer to a good compilers book (The Dragon Book, obviously!">
+
+<meta property="og:title" content="Milking the Yacc" />
+<meta property="og:description" content="So we had another assignment for our compilers construction course. We had already worked with lexical analyzers so this was a time for grammar parser generators. We had to create a BibTeX parser using Yacc/Bison. Here is a short introduction for anyone interested.
+Yacc stands for Yet Another Compiler Compiler. It is a Look-ahead, Left-to-right parser generator. To know more about what parsers are, refer to a good compilers book (The Dragon Book, obviously!" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://utkarshme.github.io/blog/milking-the-yacc/" />
+
+
+
+<meta property="article:published_time" content="2018-03-16T15:39:35&#43;05:30"/>
+
+<meta property="article:modified_time" content="2018-03-16T15:39:35&#43;05:30"/>
+
+
+
+
+
+
+
+
+
+
+
+
+<title>
+
+
+     Milking the Yacc 
+
+</title>
+<link rel="canonical" href="https://utkarshme.github.io/blog/milking-the-yacc/">
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/styles/default.min.css">
+
+
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Ubuntu+Mono:400,400i,700,700i|Raleway:500">
+
+
+
+    
+    <link rel="stylesheet" href="/css/reset.css?t=2018-03-16%2022%3a37%3a26.107370141%20%2b0530%20IST%20m%3d%2b0.047531775">
+    <link rel="stylesheet" href="/css/pygments.css?t=2018-03-16%2022%3a37%3a26.107370141%20%2b0530%20IST%20m%3d%2b0.047531775">
+    <link rel="stylesheet" href="/css/main.css?t=2018-03-16%2022%3a37%3a26.107370141%20%2b0530%20IST%20m%3d%2b0.047531775">
+    
+
+
+
+
+<link rel="shortcut icon"
+
+    href="/img/favicon.ico"
+
+>
+
+
+
+
+
+
+
+
+</head>
+
+
+<body lang="en">
+
+<section class="header">
+    <div class="container">
+        <div class="content">
+            
+                
+                
+                
+                
+                
+                    
+                
+                    
+                
+                
+                <a href="/"><img class="avatar" src="/img/profile.jpg" srcset="https://utkarshme.github.io/img/profile.jpg 1x"></a>
+            
+            <a href="/"><div class="name">Utkarsh Maheshwari</div></a>
+            
+              <h3 class="self-intro">Code is beautiful, if you have the eye for it.</h3>
+            
+            <nav>
+                <ul>
+                    
+                        <li class="nav-home"><a href="https://utkarshme.github.io/"><span>Home</span></a></li>
+                    
+                        <li class="nav-blog"><a href="https://utkarshme.github.io/blog/"><span>Blog</span></a></li>
+                    
+                        <li class="nav-about"><a href="https://utkarshme.github.io/about"><span>About</span></a></li>
+                    
+                        <li class="nav-projects"><a href="https://utkarshme.github.io/projects"><span>Projects</span></a></li>
+                    
+                        <li class="nav-github"><a href="https://github.com/UtkarshMe"><span>Github</span></a></li>
+                    
+                        <li class="nav-resume"><a href="https://utkarshme.github.io/resume.pdf"><span>Resume</span></a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+    </div>
+</section>
+
+<section class="icons">
+    <div class="container">
+        <div class="content">
+
+        
+            <a href="https://github.com/UtkarshMe" target="_blank" rel="noopener"><img class="icon" src="/img/github.svg" alt="github" /></a>
+        
+
+        
+            <a href="https://twitter.com/utkarshme96" target="_blank" rel="noopener"><img class="icon" src="/img/twitter.svg" alt="twitter" /></a>
+        
+
+        
+
+        
+
+        
+            <a href="https://www.linkedin.com/in/utkarshme96/" target="_blank" rel="noopener"><img class="icon" src="/img/linkedin.svg" alt="linkedin" /></a>
+        
+
+        
+
+        
+            
+        
+
+        
+
+        
+            <a href="mailto:utkarshme96@gmail.com"><img class="icon" src="/img/email.svg" alt="email" /></a>
+        
+
+        
+            <a href="https://utkarshme.github.io/index.xml"><img class="icon" src="/img/rss.svg" alt="rss" /></a>
+        
+        
+        </div>
+    </div>
+</section>
+
+
+<section class="main post non-narrow zero-top-spacing">
+    <div class="container">
+        <div class="content">
+            <div class="front-matter">
+                <div class="title-container">
+                    <div class="page-heading">
+
+    Milking the Yacc
+
+</div>
+
+                    <div class="initials"><a href="https://utkarshme.github.io"></a></div>
+                </div>
+                <div class="meta">
+                    
+                    <div class="date" title='Fri Mar 16 2018 15:39:35 IST'>Mar 16, 2018</div>
+                    
+                    
+		    <div class="reading-time"><div class="middot"></div>3 minutes read</div>
+                    
+                </div>
+            </div>
+            <div class="markdown">
+                <p>So we had another assignment for our compilers construction course. We had already worked with lexical analyzers so this was a time for grammar parser generators. We had to create a BibTeX parser using Yacc/Bison. Here is a short introduction for anyone interested.</p>
+
+<p>Yacc stands for Yet Another Compiler Compiler. It is a Look-ahead, Left-to-right parser generator. To know more about what parsers are, refer to a good compilers book (The Dragon Book, obviously!). GNU implements yacc in their program called Bison. Although, bison can be used in place of yacc, they are not completely the same and have small differences here and there.</p>
+
+<p>Yacc generates a parser which goes through your program and checks it&rsquo;s syntax, extracts all useful information for compiling it and lots of other stuff. I used lex to tokenize the input. Yacc specifies what the tokens mean when taken together, much like how sentences are formed when words are placed in a certain order.</p>
+
+<p>A simple yacc file follows the following order:</p>
+
+<pre><code class="language-c">%{
+/* Header files */
+/* Global variables, etc */
+%}
+
+/* Token declarations */
+
+%%
+/* Parsing grammar rules */
+%%
+
+/* C code */
+</code></pre>
+
+<p>Using <code>-d</code> option with yacc also generates a header file which contains an enum containing the tokens which can directly be used in the lex file to remove the redundant task of writing the writing the tokens again. Just include this file in lex and you&rsquo;re up!</p>
+
+<p>This is all about passing the token name. But what about passing the token value to yacc? Well, that is done using a variable called <code>yylval</code>. This variable is of type <code>int</code> by default but yacc allows you to define it as a union in the &ldquo;definitions&rdquo; part.</p>
+
+<pre><code>%union {
+    int   ival;
+    char  *sval;
+    float fval;
+}
+</code></pre>
+
+<p>For passing strings from lex to yacc, it is important to remember to <strong>copy</strong> the contents from the token to <code>yylval</code> and not just pass it&rsquo;s address because it tends to get overwritten. This kept me up late because I kept getting segfaults which I could not figure out how!</p>
+
+<p>The definitions block also contains the definitions of the tokens and the types of the sequences:</p>
+
+<pre><code class="language-c">%token  PLUS_SIGN DIGIT
+%type   &lt;ival&gt;      add
+</code></pre>
+
+<p>The rules in yacc follow this simple pattern:</p>
+
+<pre><code class="language-c">/* Defines how numbers are formed */
+integer:    DIGIT integer
+            | DIGIT
+            ;
+</code></pre>
+
+<p>To add two numbers, for example, you would write this:</p>
+
+<pre><code class="language-c">add:        integer PLUS_SIGN integer
+                { /* This block contains the supporting C code */
+                    $$ = $1 + $3;
+                }
+            ;
+</code></pre>
+
+<p><code>$$</code>, <code>$1</code>, <code>$2</code>, etc. are special variable names which have their scopes within the rule only. <code>$$</code> is the variable associated with the current sequence. <code>$1</code> is the first token/sequence in the rule definition and so on.</p>
+
+<p>The yacc file also contains the <code>main</code> function which calls <code>yyparse()</code> and a functions <code>yyerror(char *error)</code> which takes action according to the error. This is called by the generated parser when an error occurs while parsing.</p>
+
+<p>The code for my project can be found here: <a href="https://github.com/UtkarshMe/Yaccing">github.com/UtkarshMe/Yaccing</a>.</p>
+
+                <br>
+		<p><a href="/blog/">Back to posts</a></p>
+            </div>
+            <br>
+            <div class="disqus">
+                
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+
+
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-109205422-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='//www.google-analytics.com/analytics.js'></script>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/highlight.min.js"></script>
+  
+
+  <script type="text/javascript">
+    hljs.initHighlightingOnLoad();
+  </script>
+
+
+
+
+
+</body>
+</html>
+
