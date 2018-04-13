@@ -9,6 +9,21 @@ date: 2017-11-01T20:36:32+05:30
 
 <br/>
 <div style="float:right;text-align:right">
+    _April, 2018_
+</div>
+
+uC to LLVM Compiler
+---
+A small compiler for microC or uC (which is a subset of C language) to LLVM
+Intermediate Representation, from which it can be compiled to either LLVM
+bytecode or platform specific binary.
+[Browse source code](https://github.com/UtkarshMe/uc-to-llvm)
+
+`C` | `Yacc/Bison` | `LLVM` | `Lex/Flex`
+
+
+<br/>
+<div style="float:right;text-align:right">
     _November, 2017<br/>In progress_
 </div>
 
