@@ -20,7 +20,7 @@ permalinks:
   blog                : "blog/:slug/"
 
 params:
-  logofile            : ""
+  logofile            : "img/logo.png"
   faviconfile         : "img/logo.png"
   social_banner       : "img/logo.png"
   author              : "Utkarsh Maheshwari"
