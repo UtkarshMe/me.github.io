@@ -6,6 +6,7 @@ date: 2017-10-16T18:54:02+05:30
 Hi! I am a 21 year old kid pursuing my undergraduate degree in Computer Science
 from [BITS Pilani, Goa Campus](http://www.bits-pilani.ac.in/Goa/). I am an
 [ISFP](https://www.16personalities.com/isfp-personality) through and through.
+**You can find my resume [here](/resume.pdf)**.
 
 **I love to code.** I have a great interest in application development and
 system programming. I am an avid open-source supporter. My soft spot for Linux
