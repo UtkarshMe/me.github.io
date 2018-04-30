@@ -5,13 +5,12 @@ publishDir          : ".."
 
 baseURL             : "https://utkarshme.github.io/"
 languageCode        : "en-US"
-title               : "Utkarsh Maheshwari"
+title               : "Debug and stuff"
 author              : "Utkarsh Maheshwari"
 googleAnalytics     : "UA-109205422-1"
 pluralizelisttitles : false
 
 theme               : "cocoa-eh"
-sectionPagesMenu    : "main"
 
 taxonomies:
   category            : "categories"
@@ -21,7 +20,7 @@ permalinks:
   blog                : "blog/:slug/"
 
 params:
-  logofile            : "img/logo.png"
+  logofile            : ""
   faviconfile         : "img/logo.png"
   social_banner       : "img/logo.png"
   author              : "Utkarsh Maheshwari"
