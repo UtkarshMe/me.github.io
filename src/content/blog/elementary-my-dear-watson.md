@@ -1,6 +1,12 @@
 ---
 title: "Elementary, my dear Watson"
 date: 2017-02-10T10:35:41+05:30
+tags:
+- linux
+- distro
+- elementary os
+categories:
+- explore
 ---
 
 The new OS is in! Welcome, *drumrolls* **Elementary OS 0.4 Loki.** It was a

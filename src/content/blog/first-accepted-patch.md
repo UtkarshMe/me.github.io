@@ -1,6 +1,11 @@
 ---
 title: "First accepted patch!"
 date: 2017-03-13T05:55:22+05:30
+tags:
+- gnome
+- patch
+categories:
+- open source
 ---
 
 This is so damn exciting! My code is going into the awesome repositories of

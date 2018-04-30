@@ -1,6 +1,13 @@
 ---
 title: "Learning Flex"
 date: 2018-02-14T17:56:46+05:30
+tags:
+- compilers
+- lex
+- how-to
+- C
+categories:
+- project
 ---
 
 So we had this [assignment](https://github.com/UtkarshMe/Flexing) for our _Compilers Construction_ course to write a program to generated beautified HTML file for a given C program. The stupid approach is to write a lexical analyzer from scratch with might take ages. The intelligent (and accepted) approach is to use a lexical analyzer generator and this is where _Flex_ comes into picture.

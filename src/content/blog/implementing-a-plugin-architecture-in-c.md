@@ -1,6 +1,11 @@
 ---
 title: "Implementing a plugin architecture in C"
 date: 2017-11-13T15:29:17+05:30
+tags:
+- C
+- how-to
+categories:
+- project
 ---
 
 Recently I was working on [a

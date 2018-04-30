@@ -1,6 +1,11 @@
 ---
 title: "First pull request"
 date: 2017-03-04T08:08:26+05:30
+tags:
+- elementary os
+- patch
+categories:
+- open source
 ---
 
 Since I had switched to Elementary OS and I had to tweak it, I foraged the

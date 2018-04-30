@@ -1,6 +1,12 @@
 ---
 title: "Learning Agent That Plays Tic-Tac-Toe"
 date: 2018-04-18T12:45:54+05:30
+tags:
+- artificial intelligence
+- python
+- how-to
+categories:
+- project
 ---
 
 ## Defining the problem

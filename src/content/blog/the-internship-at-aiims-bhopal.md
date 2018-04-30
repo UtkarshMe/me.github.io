@@ -1,6 +1,11 @@
 ---
 title: "The Internship @ AIIMS, Bhopal"
 date: 2017-06-13T11:11:22+05:30
+tags:
+- webdev
+- nodejs
+categories:
+- project
 ---
 
 As is the tradition of BITS, every second yearite is expected to go to an

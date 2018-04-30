@@ -1,6 +1,11 @@
 ---
 title: "New found love - i3wm"
 date: 2017-10-16T18:04:46+05:30
+tags:
+- linux
+- wm
+categories:
+- explore
 ---
 
 So I had enough of Gnome breaking every now and then, filling up my RAM with

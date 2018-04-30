@@ -1,6 +1,14 @@
 ---
 title: "Milking the Yacc"
 date: 2018-03-16T15:39:35+05:30
+tags:
+- compilers
+- lex
+- yacc
+- how-to
+- C
+categories:
+- project
 ---
 
 So we had another assignment for our compilers construction course. We had already worked with lexical analyzers so this was a time for grammar parser generators. We had to create a BibTeX parser using Yacc/Bison. Here is a short introduction for anyone interested.

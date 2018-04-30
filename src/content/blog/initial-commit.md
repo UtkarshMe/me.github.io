@@ -1,6 +1,9 @@
 ---
 title: "Initial commit"
 date: 2017-02-03T02:38:18+05:30
+tags:
+categories:
+- plan
 ---
 
 So the customary **Hello world** was in line. There. I said it. The program

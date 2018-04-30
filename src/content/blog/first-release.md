@@ -1,6 +1,12 @@
 ---
 title: "First release!"
 date: 2017-02-04T11:48:22+05:30
+tags:
+- bitsnet
+- shell
+categories:
+- release
+- project
 ---
 
 It was a pain in the ass, logging into the internet portal again and again and

@@ -1,6 +1,12 @@
 ---
 title: "It's a monArchy!"
 date: 2017-03-05T03:15:20+05:30
+tags:
+- linux
+- distro
+- arch
+categories:
+- explore
 ---
 
 _Why is this [Arch Linux](https://www.archlinux.org/) such a big deal among

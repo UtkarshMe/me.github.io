@@ -1,6 +1,12 @@
 ---
 title: "Learn Vim, the fun way"
 date: 2017-04-27T10:41:45+05:30
+tags:
+- vim
+- C
+categories:
+- project
+- plan
 ---
 
 Okay, it's been a while since I last wrote. I got a little busy with my acads
