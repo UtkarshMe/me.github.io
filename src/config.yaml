@@ -21,13 +21,13 @@ permalinks:
   blog                : "blog/:slug/"
 
 params:
-  logofile            : ""
+  logofile            : "img/logo.png"
+  faviconfile         : "img/logo.png"
+  social_banner       : "img/logo.png"
   author              : "Utkarsh Maheshwari"
   description         : "Code is beautiful, if you have the eye for it."
   email               : "utkarshme96@gmail.com"
   copyright           : "Copyright © 2018 Utkarsh Maheshwari"
-  faviconfile         : "img/favicon.ico"
-  social_banner       : "img/profile.jpg"
 
   dateform            : "Jan 2, 2006"
   dateformfull        : "Mon Jan 2 2006 15:04:05 IST"
@@ -36,7 +36,7 @@ params:
   highlightjs         : true
   progressively       : true
   align_left          : false
-  small_banner_logo   : true
+  small_banner_logo   : false
   posts_navigation    : true
 
   github              : "UtkarshMe"
