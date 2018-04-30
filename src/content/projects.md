@@ -3,8 +3,19 @@ title: "Projects"
 date: 2017-11-01T20:36:32+05:30
 ---
 
-### My GitHub contributions
-<img src="http://ghchart.rshah.org/utkarshme" alt="Utkarsh's GitHub chart" />
+<br/>
+<div style="float:right;text-align:right">
+    _April, 2018_
+</div>
+
+Private Network on Docker
+---
+An example of a private network which can only be accessed in a Docker
+container. The example creates an Apache server which is invisible outside
+the authenticated containers.
+[Browse source code](https://github.com/UtkarshMe/docker_private_network)
+
+`Docker` | `Shell` | `Apache`
 
 
 <br/>

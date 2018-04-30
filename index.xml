@@ -70,11 +70,11 @@ The developer who makes the plugin infrastructure is required to provide a way t
       <pubDate>Wed, 01 Nov 2017 20:36:32 +0530</pubDate>
       
       <guid>https://utkarshme.github.io/projects/</guid>
-      <description>My GitHub contributions  April, 2018 
-uC to LLVM Compiler A small compiler for microC or uC (which is a subset of C language) to LLVM Intermediate Representation, from which it can be compiled to either LLVM bytecode or platform specific binary. Browse source code
-C | Yacc/Bison | LLVM | Lex/Flex
- November, 2017In progress 
-Synergy An app to sync your phone and GNU/Linux notifications with each other.</description>
+      <description>April, 2018 
+Private Network on Docker An example of a private network which can only be accessed in a Docker container. The example creates an Apache server which is invisible outside the authenticated containers. Browse source code
+Docker | Shell | Apache
+ April, 2018 
+uC to LLVM Compiler A small compiler for microC or uC (which is a subset of C language) to LLVM Intermediate Representation, from which it can be compiled to either LLVM bytecode or platform specific binary.</description>
     </item>
     
     <item>
