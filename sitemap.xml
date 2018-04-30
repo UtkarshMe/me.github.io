@@ -83,8 +83,32 @@
   </url>
   
   <url>
+    <loc>https://utkarshme.github.io/tags/arch/</loc>
+    <lastmod>2017-03-05T03:15:20+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://utkarshme.github.io/tags/artificial-intelligence/</loc>
+    <lastmod>2018-04-18T12:45:54+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://utkarshme.github.io/tags/bitsnet/</loc>
+    <lastmod>2017-02-04T11:48:22+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://utkarshme.github.io/blog/</loc>
     <lastmod>2018-04-18T12:45:54+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://utkarshme.github.io/tags/c/</loc>
+    <lastmod>2018-03-16T15:39:35+05:30</lastmod>
     <priority>0</priority>
   </url>
   
@@ -94,7 +118,128 @@
   </url>
   
   <url>
+    <loc>https://utkarshme.github.io/tags/compilers/</loc>
+    <lastmod>2018-03-16T15:39:35+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://utkarshme.github.io/tags/distro/</loc>
+    <lastmod>2017-03-05T03:15:20+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://utkarshme.github.io/tags/elementary-os/</loc>
+    <lastmod>2017-03-04T08:08:26+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://utkarshme.github.io/categories/explore/</loc>
+    <lastmod>2017-10-16T18:04:46+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://utkarshme.github.io/tags/gnome/</loc>
+    <lastmod>2017-03-13T05:55:22+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://utkarshme.github.io/tags/how-to/</loc>
+    <lastmod>2018-04-18T12:45:54+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://utkarshme.github.io/tags/lex/</loc>
+    <lastmod>2018-03-16T15:39:35+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://utkarshme.github.io/tags/linux/</loc>
+    <lastmod>2017-10-16T18:04:46+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://utkarshme.github.io/tags/nodejs/</loc>
+    <lastmod>2017-06-13T11:11:22+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://utkarshme.github.io/categories/open-source/</loc>
+    <lastmod>2017-03-13T05:55:22+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://utkarshme.github.io/tags/patch/</loc>
+    <lastmod>2017-03-13T05:55:22+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://utkarshme.github.io/categories/plan/</loc>
+    <lastmod>2017-04-27T10:41:45+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://utkarshme.github.io/categories/project/</loc>
+    <lastmod>2018-04-18T12:45:54+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://utkarshme.github.io/tags/python/</loc>
+    <lastmod>2018-04-18T12:45:54+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://utkarshme.github.io/categories/release/</loc>
+    <lastmod>2017-02-04T11:48:22+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://utkarshme.github.io/tags/shell/</loc>
+    <lastmod>2017-02-04T11:48:22+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://utkarshme.github.io/tags/</loc>
+    <lastmod>2017-03-05T03:15:20+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://utkarshme.github.io/tags/vim/</loc>
+    <lastmod>2017-04-27T10:41:45+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://utkarshme.github.io/tags/webdev/</loc>
+    <lastmod>2017-06-13T11:11:22+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://utkarshme.github.io/tags/wm/</loc>
+    <lastmod>2017-10-16T18:04:46+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://utkarshme.github.io/tags/yacc/</loc>
+    <lastmod>2018-03-16T15:39:35+05:30</lastmod>
     <priority>0</priority>
   </url>
   

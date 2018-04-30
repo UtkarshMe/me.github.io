@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Project on Utkarsh Maheshwari</title>
+    <link>https://utkarshme.github.io/categories/project/</link>
+    <description>Recent content in Project on Utkarsh Maheshwari</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 18 Apr 2018 12:45:54 +0530</lastBuildDate>
+    
+	<atom:link href="https://utkarshme.github.io/categories/project/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Learning Agent That Plays Tic-Tac-Toe</title>
+      <link>https://utkarshme.github.io/blog/tic-tac-toe-solver/</link>
+      <pubDate>Wed, 18 Apr 2018 12:45:54 +0530</pubDate>
+      
+      <guid>https://utkarshme.github.io/blog/tic-tac-toe-solver/</guid>
+      <description>Defining the problem The problem is to create a learning agent that plays Tic-Tac-Toe. The accompanying implementation can be found here.
+The knowledge base Our agent starts with some knowledge about the game. It knows:
+ Three x or o in a row end the game in a win/loss respectively. No boxes left end the game in a draw. Always try to win. If not possible, try to not lose.</description>
+    </item>
+    
+    <item>
+      <title>Milking the Yacc</title>
+      <link>https://utkarshme.github.io/blog/milking-the-yacc/</link>
+      <pubDate>Fri, 16 Mar 2018 15:39:35 +0530</pubDate>
+      
+      <guid>https://utkarshme.github.io/blog/milking-the-yacc/</guid>
+      <description>So we had another assignment for our compilers construction course. We had already worked with lexical analyzers so this was a time for grammar parser generators. We had to create a BibTeX parser using Yacc/Bison. Here is a short introduction for anyone interested.
+Yacc stands for Yet Another Compiler Compiler. It is a Look-ahead, Left-to-right parser generator. To know more about what parsers are, refer to a good compilers book (The Dragon Book, obviously!</description>
+    </item>
+    
+    <item>
+      <title>Learning Flex</title>
+      <link>https://utkarshme.github.io/blog/learning-flex/</link>
+      <pubDate>Wed, 14 Feb 2018 17:56:46 +0530</pubDate>
+      
+      <guid>https://utkarshme.github.io/blog/learning-flex/</guid>
+      <description>So we had this assignment for our Compilers Construction course to write a program to generated beautified HTML file for a given C program. The stupid approach is to write a lexical analyzer from scratch with might take ages. The intelligent (and accepted) approach is to use a lexical analyzer generator and this is where Flex comes into picture.
+Flex is a FOSS alternative to the POSIX lexical analyzer generator Lex and generates a lexical analyzer program from the vocabulary you specify for the language you&amp;rsquo;re writing a compiler for.</description>
+    </item>
+    
+    <item>
+      <title>Implementing a plugin architecture in C</title>
+      <link>https://utkarshme.github.io/blog/implementing-a-plugin-architecture-in-c/</link>
+      <pubDate>Mon, 13 Nov 2017 15:29:17 +0530</pubDate>
+      
+      <guid>https://utkarshme.github.io/blog/implementing-a-plugin-architecture-in-c/</guid>
+      <description>Recently I was working on a project where I had decided to make the application extensible by use of plugins (or add-ons). A plugin is a piece of code which is not part of the core app and is not required for proper working of it; it provides with additional functionality and allows third-party developers to extend the app.
+The developer who makes the plugin infrastructure is required to provide a way to:</description>
+    </item>
+    
+    <item>
+      <title>The Internship @ AIIMS, Bhopal</title>
+      <link>https://utkarshme.github.io/blog/the-internship-at-aiims-bhopal/</link>
+      <pubDate>Tue, 13 Jun 2017 11:11:22 +0530</pubDate>
+      
+      <guid>https://utkarshme.github.io/blog/the-internship-at-aiims-bhopal/</guid>
+      <description>As is the tradition of BITS, every second yearite is expected to go to an internship to a place and a organization allotted by the institute. I was given AIIMS, Bhopal a budding, new part of the prestigious AIIMS brand. But the problem was it being a hospital! What was I expected to do at a goddamn hospital?! Write code to cure cancer? (interesting&amp;hellip; Maybe, someday?)
+The first few days were pretty useless.</description>
+    </item>
+    
+    <item>
+      <title>Learn Vim, the fun way</title>
+      <link>https://utkarshme.github.io/blog/learn-vim-the-fun-way/</link>
+      <pubDate>Thu, 27 Apr 2017 10:41:45 +0530</pubDate>
+      
+      <guid>https://utkarshme.github.io/blog/learn-vim-the-fun-way/</guid>
+      <description>Okay, it&amp;rsquo;s been a while since I last wrote. I got a little busy with my acads is all. But not to worry because I have a new project at hand! Woohoo! And it&amp;rsquo;s finally what I really like to do; low level shiz and not WebDev.
+Enough beating around the bush, let me introduce you to, &amp;lsquo;A Vim Story&amp;rsquo;, the new best way to learn Vim. The idea is to make a game out of it and let the user enjoy the steep learning curve, rather than dread it like I did.</description>
+    </item>
+    
+    <item>
+      <title>First release!</title>
+      <link>https://utkarshme.github.io/blog/first-release/</link>
+      <pubDate>Sat, 04 Feb 2017 11:48:22 +0530</pubDate>
+      
+      <guid>https://utkarshme.github.io/blog/first-release/</guid>
+      <description>It was a pain in the ass, logging into the internet portal again and again and again. A script was needed and it was needed badly. Presenting the BitsnetLogin v1.0.0. A complete cli program in itself with a launcher app. The options in the current release include (but are not limited to) logging into the Hostel LAN and WiFi and Academic block wifi. The app is designed for unix/linux based systems only for the moment.</description>
+    </item>
+    
+  </channel>
+</rss>

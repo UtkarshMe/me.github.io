@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vim on Utkarsh Maheshwari</title>
+    <link>https://utkarshme.github.io/tags/vim/</link>
+    <description>Recent content in Vim on Utkarsh Maheshwari</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 27 Apr 2017 10:41:45 +0530</lastBuildDate>
+    
+	<atom:link href="https://utkarshme.github.io/tags/vim/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Learn Vim, the fun way</title>
+      <link>https://utkarshme.github.io/blog/learn-vim-the-fun-way/</link>
+      <pubDate>Thu, 27 Apr 2017 10:41:45 +0530</pubDate>
+      
+      <guid>https://utkarshme.github.io/blog/learn-vim-the-fun-way/</guid>
+      <description>Okay, it&amp;rsquo;s been a while since I last wrote. I got a little busy with my acads is all. But not to worry because I have a new project at hand! Woohoo! And it&amp;rsquo;s finally what I really like to do; low level shiz and not WebDev.
+Enough beating around the bush, let me introduce you to, &amp;lsquo;A Vim Story&amp;rsquo;, the new best way to learn Vim. The idea is to make a game out of it and let the user enjoy the steep learning curve, rather than dread it like I did.</description>
+    </item>
+    
+  </channel>
+</rss>
