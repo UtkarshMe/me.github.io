@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://utkarshme.github.io/blog/tic-tac-toe-solver/</loc>
+    <loc>https://utkarshme.github.io/blog/learning-agent-that-plays-tic-tac-toe/</loc>
     <lastmod>2018-04-18T12:45:54+05:30</lastmod>
   </url>
   
@@ -28,7 +28,7 @@
   </url>
   
   <url>
-    <loc>https://utkarshme.github.io/</loc>
+    <loc>https://utkarshme.github.io/home/</loc>
     <lastmod>2017-10-16T18:59:21+05:30</lastmod>
   </url>
   
@@ -38,12 +38,12 @@
   </url>
   
   <url>
-    <loc>https://utkarshme.github.io/blog/new-found-love-i3wm/</loc>
+    <loc>https://utkarshme.github.io/blog/new-found-love---i3wm/</loc>
     <lastmod>2017-10-16T18:04:46+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://utkarshme.github.io/blog/the-internship-at-aiims-bhopal/</loc>
+    <loc>https://utkarshme.github.io/blog/the-internship--aiims-bhopal/</loc>
     <lastmod>2017-06-13T11:11:22+05:30</lastmod>
   </url>
   
@@ -216,6 +216,12 @@
   <url>
     <loc>https://utkarshme.github.io/tags/</loc>
     <lastmod>2017-03-05T03:15:20+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://utkarshme.github.io/</loc>
+    <lastmod>2018-04-18T12:45:54+05:30</lastmod>
     <priority>0</priority>
   </url>
   

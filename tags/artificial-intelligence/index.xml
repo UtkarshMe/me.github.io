@@ -5,7 +5,7 @@
     <link>https://utkarshme.github.io/tags/artificial-intelligence/</link>
     <description>Recent content in Artificial Intelligence on Utkarsh Maheshwari</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en-US</language>
     <lastBuildDate>Wed, 18 Apr 2018 12:45:54 +0530</lastBuildDate>
     
 	<atom:link href="https://utkarshme.github.io/tags/artificial-intelligence/index.xml" rel="self" type="application/rss+xml" />
@@ -13,10 +13,10 @@
     
     <item>
       <title>Learning Agent That Plays Tic-Tac-Toe</title>
-      <link>https://utkarshme.github.io/blog/tic-tac-toe-solver/</link>
+      <link>https://utkarshme.github.io/blog/learning-agent-that-plays-tic-tac-toe/</link>
       <pubDate>Wed, 18 Apr 2018 12:45:54 +0530</pubDate>
       
-      <guid>https://utkarshme.github.io/blog/tic-tac-toe-solver/</guid>
+      <guid>https://utkarshme.github.io/blog/learning-agent-that-plays-tic-tac-toe/</guid>
       <description>Defining the problem The problem is to create a learning agent that plays Tic-Tac-Toe. The accompanying implementation can be found here.
 The knowledge base Our agent starts with some knowledge about the game. It knows:
  Three x or o in a row end the game in a win/loss respectively. No boxes left end the game in a draw. Always try to win. If not possible, try to not lose.</description>

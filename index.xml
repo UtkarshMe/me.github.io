@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Home on Utkarsh Maheshwari</title>
+    <title>Utkarsh Maheshwari</title>
     <link>https://utkarshme.github.io/</link>
-    <description>Recent content in Home on Utkarsh Maheshwari</description>
+    <description>Recent content on Utkarsh Maheshwari</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Mon, 16 Oct 2017 18:59:21 +0530</lastBuildDate>
+    <language>en-US</language>
+    <lastBuildDate>Wed, 18 Apr 2018 12:45:54 +0530</lastBuildDate>
     
 	<atom:link href="https://utkarshme.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Learning Agent That Plays Tic-Tac-Toe</title>
-      <link>https://utkarshme.github.io/blog/tic-tac-toe-solver/</link>
+      <link>https://utkarshme.github.io/blog/learning-agent-that-plays-tic-tac-toe/</link>
       <pubDate>Wed, 18 Apr 2018 12:45:54 +0530</pubDate>
       
-      <guid>https://utkarshme.github.io/blog/tic-tac-toe-solver/</guid>
+      <guid>https://utkarshme.github.io/blog/learning-agent-that-plays-tic-tac-toe/</guid>
       <description>Defining the problem The problem is to create a learning agent that plays Tic-Tac-Toe. The accompanying implementation can be found here.
 The knowledge base Our agent starts with some knowledge about the game. It knows:
  Three x or o in a row end the game in a win/loss respectively. No boxes left end the game in a draw. Always try to win. If not possible, try to not lose.</description>
@@ -53,21 +53,56 @@ The developer who makes the plugin infrastructure is required to provide a way t
     </item>
     
     <item>
+      <title>Projects</title>
+      <link>https://utkarshme.github.io/projects/</link>
+      <pubDate>Wed, 01 Nov 2017 20:36:32 +0530</pubDate>
+      
+      <guid>https://utkarshme.github.io/projects/</guid>
+      <description>My GitHub contributions  April, 2018 
+uC to LLVM Compiler A small compiler for microC or uC (which is a subset of C language) to LLVM Intermediate Representation, from which it can be compiled to either LLVM bytecode or platform specific binary. Browse source code
+C | Yacc/Bison | LLVM | Lex/Flex
+ November, 2017In progress 
+Synergy An app to sync your phone and GNU/Linux notifications with each other.</description>
+    </item>
+    
+    <item>
+      <title>Home</title>
+      <link>https://utkarshme.github.io/home/</link>
+      <pubDate>Mon, 16 Oct 2017 18:59:21 +0530</pubDate>
+      
+      <guid>https://utkarshme.github.io/home/</guid>
+      <description>Long nights and a laptop. And a cup of coffee. And WiFi. And music.
+ This blog is about the adventures of a boy who slayed the dragon and brought peace to the land and ocean, far and wide.
+Nah, just kidding. It&amp;rsquo;s an ordinary blog about the activities of an ordinary guy. By an ordinary guy. Nothing special.
+But let me tell you that I blog irregularly. Why? Well, let&amp;rsquo;s face it, blogging isn&amp;rsquo;t my first love.</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://utkarshme.github.io/about/</link>
+      <pubDate>Mon, 16 Oct 2017 18:54:02 +0530</pubDate>
+      
+      <guid>https://utkarshme.github.io/about/</guid>
+      <description>Hi! I am a 21 year old kid pursuing my undergraduate degree in Computer Science from BITS Pilani, Goa Campus. I am an ISFP through and through.
+I love to code. I have a great interest in application development and system programming. I am an avid open-source supporter. My soft spot for Linux is a reason why I am evolving a new passion in OS development. You can find my humble projects on my Github.</description>
+    </item>
+    
+    <item>
       <title>New found love - i3wm</title>
-      <link>https://utkarshme.github.io/blog/new-found-love-i3wm/</link>
+      <link>https://utkarshme.github.io/blog/new-found-love---i3wm/</link>
       <pubDate>Mon, 16 Oct 2017 18:04:46 +0530</pubDate>
       
-      <guid>https://utkarshme.github.io/blog/new-found-love-i3wm/</guid>
+      <guid>https://utkarshme.github.io/blog/new-found-love---i3wm/</guid>
       <description>So I had enough of Gnome breaking every now and then, filling up my RAM with all sorts of unwanted services and decided to switch to something new. I wanted something that would reduce the whole dependency cycle; something which does not make you choose between eye-candy and performance.
 And i3wm caught my eye, which claims to be &amp;ldquo;targeted at advanced users and developers.&amp;rdquo; I looked around for some screenshots for how does it look and was surprised to find that every one of them was drastically different from the other.</description>
     </item>
     
     <item>
       <title>The Internship @ AIIMS, Bhopal</title>
-      <link>https://utkarshme.github.io/blog/the-internship-at-aiims-bhopal/</link>
+      <link>https://utkarshme.github.io/blog/the-internship--aiims-bhopal/</link>
       <pubDate>Tue, 13 Jun 2017 11:11:22 +0530</pubDate>
       
-      <guid>https://utkarshme.github.io/blog/the-internship-at-aiims-bhopal/</guid>
+      <guid>https://utkarshme.github.io/blog/the-internship--aiims-bhopal/</guid>
       <description>As is the tradition of BITS, every second yearite is expected to go to an internship to a place and a organization allotted by the institute. I was given AIIMS, Bhopal a budding, new part of the prestigious AIIMS brand. But the problem was it being a hospital! What was I expected to do at a goddamn hospital?! Write code to cure cancer? (interesting&amp;hellip; Maybe, someday?)
 The first few days were pretty useless.</description>
     </item>

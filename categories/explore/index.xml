@@ -5,7 +5,7 @@
     <link>https://utkarshme.github.io/categories/explore/</link>
     <description>Recent content in Explore on Utkarsh Maheshwari</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en-US</language>
     <lastBuildDate>Mon, 16 Oct 2017 18:04:46 +0530</lastBuildDate>
     
 	<atom:link href="https://utkarshme.github.io/categories/explore/index.xml" rel="self" type="application/rss+xml" />
@@ -13,10 +13,10 @@
     
     <item>
       <title>New found love - i3wm</title>
-      <link>https://utkarshme.github.io/blog/new-found-love-i3wm/</link>
+      <link>https://utkarshme.github.io/blog/new-found-love---i3wm/</link>
       <pubDate>Mon, 16 Oct 2017 18:04:46 +0530</pubDate>
       
-      <guid>https://utkarshme.github.io/blog/new-found-love-i3wm/</guid>
+      <guid>https://utkarshme.github.io/blog/new-found-love---i3wm/</guid>
       <description>So I had enough of Gnome breaking every now and then, filling up my RAM with all sorts of unwanted services and decided to switch to something new. I wanted something that would reduce the whole dependency cycle; something which does not make you choose between eye-candy and performance.
 And i3wm caught my eye, which claims to be &amp;ldquo;targeted at advanced users and developers.&amp;rdquo; I looked around for some screenshots for how does it look and was surprised to find that every one of them was drastically different from the other.</description>
     </item>
