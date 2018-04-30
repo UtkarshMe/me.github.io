@@ -32,8 +32,8 @@ you need to know to fully configure your desktop. _The only limit is your
 creativity!_
 
 <br>
-Here's what the setup looks like:
-![My i3 setup](/img/i3wmsetup.jpg "My i3 setup")
+Here's what the setup looks like:<br>
+![My i3 setup](https://raw.githubusercontent.com/UtkarshMe/i3-config/master/screenshot.png "My i3 setup")
 
 I would recommend using [i3-gaps](https://github.com/Airblader/i3) which is a
 fork of i3 with some enhancements like the gaps between windows.
