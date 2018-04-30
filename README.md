@@ -11,4 +11,4 @@ hugo server --watch # start the server on localhost
 Thanks to [@mtn](https://github.com/mtn/cocoa-eh-hugo-theme) and [@nishanths](https://www.github.com/nishanths/cocoa-hugo-theme) for the awesome cocoa theme.
 
 ### License
-[GPL v3](https://github.com/UtkarshMe/utkarshme.github.io/blob/master/LICENSE) &copy Utkarsh Maheshwari
+[GPL v3](https://github.com/UtkarshMe/utkarshme.github.io/blob/master/LICENSE) &copy; Utkarsh Maheshwari
