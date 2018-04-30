@@ -6,10 +6,22 @@
     <description>Recent content on Utkarsh Maheshwari</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Wed, 18 Apr 2018 12:45:54 +0530</lastBuildDate>
+    <lastBuildDate>Mon, 30 Apr 2018 22:45:07 +0530</lastBuildDate>
     
 	<atom:link href="https://utkarshme.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>License</title>
+      <link>https://utkarshme.github.io/license/</link>
+      <pubDate>Mon, 30 Apr 2018 22:45:07 +0530</pubDate>
+      
+      <guid>https://utkarshme.github.io/license/</guid>
+      <description>Website/blog of Utkarsh Maheshwari powered by Hugo
+Copyright &amp;copy; 2017-present Utkarsh Maheshwari
+This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.</description>
+    </item>
     
     <item>
       <title>Learning Agent That Plays Tic-Tac-Toe</title>
