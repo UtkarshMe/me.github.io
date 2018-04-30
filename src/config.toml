@@ -5,7 +5,7 @@ canonifyurls        = true
 contentdir          = "content"
 publishDir          = ".."
 
-baseURL             = "https://utkarshme.github.io"
+baseURL             = "https://utkarshme.github.io/"
 languageCode        = "en-US"
 title               = "Utkarsh Maheshwari"
 author              = "Utkarsh Maheshwari"
