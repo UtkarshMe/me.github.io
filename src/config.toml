@@ -1,5 +1,5 @@
 layoutDir = "layouts"
-publishDir = "."
+publishDir = ".."
 buildDrafts = false
 baseURL = "https://utkarshme.github.io"
 languageCode = "en-us"
