@@ -8,6 +8,7 @@ languageCode        : "en-US"
 title               : "Debug and stuff"
 author              : "Utkarsh Maheshwari"
 googleAnalytics     : "UA-109205422-1"
+disqusshortname     : "utkarshme"
 pluralizelisttitles : false
 
 theme               : "cocoa-eh"
