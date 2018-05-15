@@ -6,10 +6,20 @@
     <description>Recent content in Blog on Debug and stuff</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Wed, 18 Apr 2018 12:45:54 +0530</lastBuildDate>
+    <lastBuildDate>Tue, 15 May 2018 11:03:34 +0530</lastBuildDate>
     
 	<atom:link href="https://utkarshme.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Google Summer of Code with Neovim</title>
+      <link>https://utkarshme.github.io/blog/google-summer-of-code-with-neovim/</link>
+      <pubDate>Tue, 15 May 2018 11:03:34 +0530</pubDate>
+      
+      <guid>https://utkarshme.github.io/blog/google-summer-of-code-with-neovim/</guid>
+      <description>So, I got selected as a student applicant for the Google Summer of Code (or GSoC) and will be working with Neovim over the course of next three months!
+Neovim is a fork of Vim, one of the most loved text editors that is used not only by the coding community but people from all over walks of life. I have been a devoted worshipper of Vim for about two years now and have fought in the Editor wars whenever the need arose.</description>
+    </item>
     
     <item>
       <title>Learning Agent That Plays Tic-Tac-Toe</title>

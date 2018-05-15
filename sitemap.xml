@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://utkarshme.github.io/blog/google-summer-of-code-with-neovim/</loc>
+    <lastmod>2018-05-15T11:03:34+05:30</lastmod>
+  </url>
+  
+  <url>
     <loc>https://utkarshme.github.io/license/</loc>
     <lastmod>2018-04-30T22:45:07+05:30</lastmod>
   </url>
@@ -107,13 +112,13 @@
   
   <url>
     <loc>https://utkarshme.github.io/blog/</loc>
-    <lastmod>2018-04-18T12:45:54+05:30</lastmod>
+    <lastmod>2018-05-15T11:03:34+05:30</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://utkarshme.github.io/tags/c/</loc>
-    <lastmod>2018-03-16T15:39:35+05:30</lastmod>
+    <lastmod>2018-05-15T11:03:34+05:30</lastmod>
     <priority>0</priority>
   </url>
   
@@ -130,7 +135,7 @@
   
   <url>
     <loc>https://utkarshme.github.io/</loc>
-    <lastmod>2018-04-30T22:45:07+05:30</lastmod>
+    <lastmod>2018-05-15T11:03:34+05:30</lastmod>
     <priority>0</priority>
   </url>
   
@@ -159,6 +164,18 @@
   </url>
   
   <url>
+    <loc>https://utkarshme.github.io/categories/gsoc/</loc>
+    <lastmod>2018-05-15T11:03:34+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://utkarshme.github.io/tags/gsoc/</loc>
+    <lastmod>2018-05-15T11:03:34+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://utkarshme.github.io/tags/how-to/</loc>
     <lastmod>2018-04-18T12:45:54+05:30</lastmod>
     <priority>0</priority>
@@ -173,6 +190,12 @@
   <url>
     <loc>https://utkarshme.github.io/tags/linux/</loc>
     <lastmod>2017-10-16T18:04:46+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://utkarshme.github.io/tags/neovim/</loc>
+    <lastmod>2018-05-15T11:03:34+05:30</lastmod>
     <priority>0</priority>
   </url>
   
@@ -196,13 +219,13 @@
   
   <url>
     <loc>https://utkarshme.github.io/categories/plan/</loc>
-    <lastmod>2017-04-27T10:41:45+05:30</lastmod>
+    <lastmod>2018-05-15T11:03:34+05:30</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://utkarshme.github.io/categories/project/</loc>
-    <lastmod>2018-04-18T12:45:54+05:30</lastmod>
+    <lastmod>2018-05-15T11:03:34+05:30</lastmod>
     <priority>0</priority>
   </url>
   
@@ -232,7 +255,7 @@
   
   <url>
     <loc>https://utkarshme.github.io/tags/vim/</loc>
-    <lastmod>2017-04-27T10:41:45+05:30</lastmod>
+    <lastmod>2018-05-15T11:03:34+05:30</lastmod>
     <priority>0</priority>
   </url>
   
