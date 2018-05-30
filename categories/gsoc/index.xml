@@ -6,10 +6,21 @@
     <description>Recent content in Gsoc on Debug and stuff</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Tue, 15 May 2018 11:03:34 +0530</lastBuildDate>
+    <lastBuildDate>Thu, 31 May 2018 01:07:50 +0530</lastBuildDate>
     
 	<atom:link href="https://utkarshme.github.io/categories/gsoc/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Progress After Two Weeks Into GSoC with Neovim</title>
+      <link>https://utkarshme.github.io/blog/progress-after-two-weeks-into-gsoc-with-neovim/</link>
+      <pubDate>Thu, 31 May 2018 01:07:50 +0530</pubDate>
+      
+      <guid>https://utkarshme.github.io/blog/progress-after-two-weeks-into-gsoc-with-neovim/</guid>
+      <description>This post is in continuation with this post.
+Two weeks have passed since the coding period began for Google Summer of Code on 14th May. After setting up my system in a room with a loud music system, I officially began coding.
+The progress so far The first task that I needed to do was to break up the one global grid used for screen-handling into smaller per-window grids which would later let external UIs manage them individually.</description>
+    </item>
     
     <item>
       <title>Google Summer of Code with Neovim</title>
