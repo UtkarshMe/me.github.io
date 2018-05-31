@@ -13,7 +13,7 @@ tags:
 _This post is in continuation with [this post](/blog/google-summer-of-code-with-neovim)._
 
 
-Two weeks have passed since the coding period began for Google Summer of Code on 14th May. After setting up my system in a room with a loud music system, I _officially_ began coding. 
+Two weeks have passed since the coding period began for Google Summer of Code on 14th May. After setting up my system in a room with a loud music system, I _officially_ began coding.
 
 
 ## The progress so far
@@ -30,6 +30,8 @@ The next step will be to externalize the said grids for the external UIs to take
 
 ## Experience working with Neovim
 My experience working with Neovim (mainly, Björn) so far has been very pleasant. Bjorn is extremely hardworking and inspiring. Also, I learn something new every day just by reading the rich codebase and the code-reviews that I receive. Hope to keep on learning and keep on working!
+
+**The work done so far can be found [here](https://github.com/neovim/neovim/pull/8455).**
 
 
 _Follow the [gsoc](/tags/gsoc) tag for updates._
