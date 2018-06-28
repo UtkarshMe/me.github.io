@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://utkarshme.github.io/blog/window-grid-updates-in-neovim/</loc>
+    <lastmod>2018-06-28T22:43:26+05:30</lastmod>
+  </url>
+  
+  <url>
     <loc>https://utkarshme.github.io/blog/progress-after-two-weeks-into-gsoc-with-neovim/</loc>
     <lastmod>2018-05-31T01:07:50+05:30</lastmod>
   </url>
@@ -117,7 +122,7 @@
   
   <url>
     <loc>https://utkarshme.github.io/blog/</loc>
-    <lastmod>2018-05-31T01:07:50+05:30</lastmod>
+    <lastmod>2018-06-28T22:43:26+05:30</lastmod>
     <priority>0</priority>
   </url>
   
@@ -140,7 +145,7 @@
   
   <url>
     <loc>https://utkarshme.github.io/</loc>
-    <lastmod>2018-05-31T01:07:50+05:30</lastmod>
+    <lastmod>2018-06-28T22:43:26+05:30</lastmod>
     <priority>0</priority>
   </url>
   
@@ -170,13 +175,13 @@
   
   <url>
     <loc>https://utkarshme.github.io/categories/gsoc/</loc>
-    <lastmod>2018-05-31T01:07:50+05:30</lastmod>
+    <lastmod>2018-06-28T22:43:26+05:30</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://utkarshme.github.io/tags/gsoc/</loc>
-    <lastmod>2018-05-31T01:07:50+05:30</lastmod>
+    <lastmod>2018-06-28T22:43:26+05:30</lastmod>
     <priority>0</priority>
   </url>
   
@@ -200,7 +205,7 @@
   
   <url>
     <loc>https://utkarshme.github.io/tags/neovim/</loc>
-    <lastmod>2018-05-31T01:07:50+05:30</lastmod>
+    <lastmod>2018-06-28T22:43:26+05:30</lastmod>
     <priority>0</priority>
   </url>
   
@@ -230,7 +235,7 @@
   
   <url>
     <loc>https://utkarshme.github.io/categories/project/</loc>
-    <lastmod>2018-05-31T01:07:50+05:30</lastmod>
+    <lastmod>2018-06-28T22:43:26+05:30</lastmod>
     <priority>0</priority>
   </url>
   

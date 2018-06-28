@@ -6,10 +6,21 @@
     <description>Recent content in Blog on Debug and stuff</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Thu, 31 May 2018 01:07:50 +0530</lastBuildDate>
+    <lastBuildDate>Thu, 28 Jun 2018 22:43:26 +0530</lastBuildDate>
     
 	<atom:link href="https://utkarshme.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Window Grid Updates in Neovim</title>
+      <link>https://utkarshme.github.io/blog/window-grid-updates-in-neovim/</link>
+      <pubDate>Thu, 28 Jun 2018 22:43:26 +0530</pubDate>
+      
+      <guid>https://utkarshme.github.io/blog/window-grid-updates-in-neovim/</guid>
+      <description>This post is in continuation with this post.
+Neovim has come to be a very hackable, developer friendly version of Vim. It actually is what their website claims to be: literally the future of vim and Vim-fork focused on extensibility and usability. One of the goals of nvim is to allow UIs to set different grid-sizes for each window and receive grid-based events.
+Why do we need grid-based updates and different grid-sizes than what nvim sets?</description>
+    </item>
     
     <item>
       <title>Progress After Two Weeks Into GSoC with Neovim</title>

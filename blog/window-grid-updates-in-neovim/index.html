@@ -15,24 +15,24 @@
 <meta property="og:site_name" content="Debug and stuff" />
 <meta property="og:locale" content="nn_NO" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://utkarshme.github.io/blog/its-a-monarchy/" />
-<meta property="og:title" content="It&#39;s a monArchy!" />
-<meta property="twitter:title" content="It&#39;s a monArchy!">
+<meta property="og:url" content="https://utkarshme.github.io/blog/window-grid-updates-in-neovim/" />
+<meta property="og:title" content="Window Grid Updates in Neovim" />
+<meta property="twitter:title" content="Window Grid Updates in Neovim">
 
     <meta property="og:image" content="https://utkarshme.github.io/img/logo.png">
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:image" content="https://utkarshme.github.io/img/logo.png">
 
-<meta property="og:description" content="">
-<meta property="twitter:description" content="">
+<meta property="og:description" content="About the (experimental) addition of per-window grid based updates in Neovim">
+<meta property="twitter:description" content="About the (experimental) addition of per-window grid based updates in Neovim">
 
 <title>
 
 
-     Debug and stuff - It&#39;s a monArchy! 
+     Debug and stuff - Window Grid Updates in Neovim 
 
 </title>
-<link rel="canonical" href="https://utkarshme.github.io/blog/its-a-monarchy/">
+<link rel="canonical" href="https://utkarshme.github.io/blog/window-grid-updates-in-neovim/">
 
 
 <style media="screen">
@@ -1038,25 +1038,23 @@ margin-left: -4%;
                 <div class="title-container">
                     <div class="page-heading">
 
-    It&#39;s a monArchy!
+    Window Grid Updates in Neovim
 
 </div>
 
                 </div>
                 <div class="meta">
-                    <div class="date" title="Sun Mar 5 2017 03:15:20 IST">Mar 5, 2017</div>
+                    <div class="date" title="Thu Jun 28 2018 22:43:26 IST">Jun 28, 2018</div>
                     
                         
                     
-                    <div class="reading-time middot">3 minute read</div>
+                    <div class="reading-time middot">2 minute read</div>
                     <div class="tags">
                         <ul>
                           
-                            <li class="middot"><a href="https://utkarshme.github.io/tags/linux">linux</a> </li>
+                            <li class="middot"><a href="https://utkarshme.github.io/tags/gsoc">GSoC</a> </li>
                           
-                            <li class="middot"><a href="https://utkarshme.github.io/tags/distro">distro</a> </li>
-                          
-                            <li class="middot"><a href="https://utkarshme.github.io/tags/arch">arch</a> </li>
+                            <li class="middot"><a href="https://utkarshme.github.io/tags/neovim">Neovim</a> </li>
                           
                         </ul>
                     </div>
@@ -1071,49 +1069,32 @@ margin-left: -4%;
             <div class="markdown">
                 
     
-    <p><em>Why is this <a href="https://www.archlinux.org/">Arch Linux</a> such a big deal among
-people? It can&rsquo;t be that tough! I&rsquo;ll just install it and see for myself.</em></p>
+    
 
-<p>So, here I am, installing a new Linux flavor just for the heck of it. But I
-won&rsquo;t replace my current OS just yet. Let me install it in a virtual box. After
-an easy download from their website, I have my hands on the iso image and I
-fire up my virtual box. I mistype the app name in excitement of a new Linux.
-Damn you, brain!</p>
+<p><em>This post is in continuation with <a href="https://utkarshme.github.io/blog/progress-after-two-weeks-into-gsoc-with-neovim">this post</a>.</em></p>
 
-<p><img src="https://debugandstuff.files.wordpress.com/2017/03/screenshot-from-2017-03-05-023157.png" alt="screenshot-from-2017-03-05-023157" /></p>
+<p>Neovim has come to be a very hackable, developer friendly version of Vim. It actually is what <a href="https://neovim.io/">their website</a> claims to be: <strong>literally the future of vim</strong> and <strong>Vim-fork focused on extensibility and usability</strong>.
+One of the goals of <code>nvim</code> is to allow UIs to set different grid-sizes for each window and receive grid-based events.</p>
 
-<p>It asks me to boot Arch Linux. <em>No option to install it? Weird.</em> I select the
-first option and boot into Arch Linux. After 5 secs, I find myself at the
-shell, logged in as the root. For those who don&rsquo;t know what that is, it&rsquo;s just
-a geeky way of saying that I am logged in as the system admin. Maybe a little
-complex than that. _What is happening?! Where&rsquo;s the GUI? Where&rsquo;s the installer?
-What kind of an OS is this? I hate command line._ I Google for what to do and
-am not disappointed. A
-<a href="https://www.ostechnix.com/install-arch-linux-latest-version/">wonderful article</a>
-comes to my rescue. <em>Hey, that looks kinda easy! I can work with that.</em>
-Suddenly, all this does not seem daunting anymore. My love for command line
-interface (cli) is restored. <em>Long live cli</em>! I start typing in commands one
-after another and after changing my partition table about 5 times, (yes, I
-played around and made an EFI partition, unlike what&rsquo;s given in the article)
-the OS is installed. The best thing about it was that the latest software was
-downloaded at the time of update and installed! (although it took ages to
-download, <em>sigh</em>!) A downside maybe that it can&rsquo;t be installed while offline
-but that isn&rsquo;t a problem for me.</p>
+<h3 id="why-do-we-need-grid-based-updates-and-different-grid-sizes-than-what-nvim-sets">Why do we need grid-based updates and different grid-sizes than what <code>nvim</code> sets?</h3>
 
-<p>After reboot, I&rsquo;m shown a login shell. <em>But I never made a user? I only created
-a password for the root. Ok, got it.</em> I log in as the root user and the first
-thing I do is <em>ls</em>, followed by <em>pwd</em> (just Linux commands for listing files
-and printing the current working directory, respectively). So I have no files
-and I&rsquo;m in the root folder. Let me see the contents of the _&lsquo;/&rsquo;_ directory.
-<em>Well, the filesystem sure is Linux like.</em> I think I like it like this. Nothing
-but the shell. Also, I think I&rsquo;ll see how to get a display manager and a
-desktop environment working on this one. If I&rsquo;m successful,
-<a href="https://debugandstuff.wordpress.com/2017/02/10/elementary-my-dear-watson/">goodbye Elementary</a>!
-I check the kernel version. 4.9.11. That&rsquo;s just like 15 days old! <em>Damn, this
-thing&rsquo;s updated!</em> And yes, this is really so cool, I&rsquo;m gonna show it off to
-everyone. <em>Oh, I&rsquo;m gonna flaunt it at every possible opportunity!</em></p>
+<ul>
+<li><strong>To allow UIs to set different font sizes for each window in a view.</strong><br>
+Currently, UIs must use the same font size for each and every window because of the inability to manage window size. When UIs get the option to set different grid sizes for each window, they can easily setup different font sizes for each window.</li>
+<li><strong>To allow UIs to add their own scrollbars for each window.</strong><br>
+Currently, the UIs display the window splits as dictated by <code>nvim</code> in one screen update i.e. as a single grid. They don&rsquo;t have the ability to introduce decorations like scrollbars. Once the UIs can set grid sizes, they can easily add scrollbars to individual windows.</li>
+<li><strong>To allow UIs to add their own window decorations like shadows/outlines etc.</strong><br>
+Currently, the UIs can add shadows/outlines but doing that requires parsing the screen updates, looking for window separator characters and then adding any decoration that they choose. Getting grid wise updates would simplify this task to a great degree.</li>
+<li><em>And many more.</em></li>
+</ul>
 
-<p>-ut</p>
+<p>After a month and a half of working with Neovim, we have an <a href="https://github.com/neovim/neovim/pull/8455">experimental working prototype</a> that breaks up the screen grid in per-window grids, allows UIs to set different sizes for each window grid and receive grid based events.</p>
+
+<p>Although we don&rsquo;t have it yet, but we expect to have it implemented in a GUI like <a href="https://github.com/neovim/python-gui">python-gui</a> as an example by the end of the GSoC coding period i.e. mid August. We also would encourage GUI implementers of <code>nvim</code> to test out the experimental API and report the inevitable bugs that have crept in. This would be a step towards finalizing the said prototype and allow easy transition of GUIs to better control of UI in their projects.</p>
+
+<p><strong>The work done so far can be found <a href="https://github.com/neovim/neovim/pull/8455">here</a>.</strong></p>
+
+<p><em>Follow the <a href="https://utkarshme.github.io/tags/gsoc">gsoc</a> tag for updates.</em></p>
 
 
                 <br>
@@ -1124,15 +1105,10 @@ everyone. <em>Oh, I&rsquo;m gonna flaunt it at every possible opportunity!</em><
                     
                     <div>
                         <img class="icon" src="https://utkarshme.github.io/img/back.svg" alt="back" />
-                        <a href="https://utkarshme.github.io/blog/first-pull-request/">First pull request</a>
+                        <a href="https://utkarshme.github.io/blog/progress-after-two-weeks-into-gsoc-with-neovim/">Progress After Two Weeks Into GSoC with Neovim</a>
                     </div>
                     
                     <div style="width: 100%;"></div>
-                    
-                    <div>
-                        <a href="https://utkarshme.github.io/blog/first-accepted-patch/">First accepted patch!</a>
-                        <img class="icon" src="https://utkarshme.github.io/img/next.svg" alt="next" />
-                    </div>
                     
                 </div>
             
