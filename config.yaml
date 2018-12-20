@@ -1,7 +1,6 @@
 buildDrafts         : false
 canonifyurls        : true
 contentdir          : "content"
-publishDir          : "/tmp/utkarshme.github.io"
 
 baseURL             : "https://utkarshme.github.io/"
 languageCode        : "en-US"
