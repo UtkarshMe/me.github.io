@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/UtkarshMe/me.github.io.svg?branch=master)](https://travis-ci.org/UtkarshMe/me.github.io)
+
 # My Github Page
 _Personal website, y'all!_
 
