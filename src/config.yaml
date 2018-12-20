@@ -14,31 +14,31 @@ pluralizelisttitles : false
 theme               : "cocoa-eh"
 
 taxonomies:
-  category            : "categories"
-  tag                 : "tags"
+  category          : "categories"
+  tag               : "tags"
 
 permalinks:
-  blog                : "blog/:slug/"
+  blog              : "blog/:slug/"
 
 params:
-  logofile            : "img/logo.png"
-  faviconfile         : "img/logo.png"
-  social_banner       : "img/logo.png"
-  author              : "Utkarsh Maheshwari"
-  description         : "Code is beautiful, if you have the eye for it."
-  email               : "utkarshme96@gmail.com"
-  copyright           : "Copyright © 2018 Utkarsh Maheshwari"
+  logofile          : "img/logo.png"
+  faviconfile       : "img/logo.png"
+  social_banner     : "img/logo.png"
+  author            : "Utkarsh Maheshwari"
+  description       : "Code is beautiful, if you have the eye for it."
+  email             : "utkarshme96@gmail.com"
+  copyright         : "Copyright © 2018 Utkarsh Maheshwari"
 
-  dateform            : "Jan 2, 2006"
-  dateformfull        : "Mon Jan 2 2006 15:04:05 IST"
+  dateform          : "Jan 2, 2006"
+  dateformfull      : "Mon Jan 2 2006 15:04:05 IST"
 
-  latestpostcount     : 5
-  highlightjs         : true
-  progressively       : true
-  align_left          : false
-  small_banner_logo   : false
-  posts_navigation    : true
+  latestpostcount   : 5
+  highlightjs       : true
+  progressively     : true
+  align_left        : false
+  small_banner_logo : false
+  posts_navigation  : true
 
-  github              : "UtkarshMe"
-  linkedin            : "utkarshme96"
-  twitter             : "utkarshme96"
+  github            : "UtkarshMe"
+  linkedin          : "utkarshme96"
+  twitter           : "utkarshme96"
