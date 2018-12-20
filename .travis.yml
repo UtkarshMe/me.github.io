@@ -1,0 +1,22 @@
+dist: xenial
+sudo: true
+
+addons:
+    snaps:
+        - hugo
+
+before_install:
+    - mkdir src/
+    - mv archetypes config.yaml content layouts static themes src/
+    - cd src
+
+script:
+    - hugo -t cocoa-eh
+
+deploy:
+    provider: pages
+    skip-cleanup: true
+    github-token: $GITHUB_TOKEN
+    keep-history: true
+    on:
+        branch: master
