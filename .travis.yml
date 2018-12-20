@@ -4,16 +4,13 @@ addons:
     snaps:
         - hugo
 
-before_install:
-    - mkdir src/
-    - mv archetypes config.yaml content layouts static themes src/
-
 script:
-    - cd src
+    - mkdir -p /tmp/utkarshme.github.io/
     - hugo -t cocoa-eh
-    - cd ..
+    - mv google359467a4de73152e.html /tmp/utkarshme.github.io/
 
 deploy:
+    local-dir: /tmp/utkarshme.github.io
     provider: pages
     repo: utkarshme/utkarshme.github.io
     target-branch: master
