@@ -25,7 +25,7 @@ Going back to the point that this post is about, I was exploring the source
 code and realized that it essentially was just modifying the settings in the
 applications database. As this tool interested me greatly, I decided to why not
 add a few more settings for the user and quickly forked the repo to my own
-[Github account](https://github.com/UtkarshMe). I made a few edits here and
+[Github account](https://github.com/coditva). I made a few edits here and
 there to add about 4 featured and decided to push these for the developer.
 
 Creating a pull request for the first time was an experience of mixed emotions.
@@ -37,7 +37,7 @@ My first pull request to an open source organization! Although it didn't get
 merged with the code, it did receive positive comments from the developer
 himself and that made my day! I still have these changes in my own fork and am
 using it in my system. To see and/or use these, you can always find my repo
-[here](https://github.com/UtkarshMe/elementary-tweaks/tree/mine).
+[here](https://github.com/coditva/elementary-tweaks/tree/mine).
 Happy customizing!
 
 -ut

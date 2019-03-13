@@ -11,7 +11,7 @@ categories:
 
 ## Defining the problem
 The problem is to create a learning agent that plays Tic-Tac-Toe.
-The accompanying implementation can be found [here](https://github.com/UtkarshMe/tic-tac-toe).
+The accompanying implementation can be found [here](https://github.com/coditva/tic-tac-toe).
 
 ## The knowledge base
 

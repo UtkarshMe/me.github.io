@@ -11,7 +11,7 @@ script:
 deploy:
     local-dir: public/
     provider: pages
-    repo: utkarshme/utkarshme.github.io
+    repo: coditva/coditva.github.io
     target-branch: master
     skip-cleanup: true
     github-token: $GITHUB_TOKEN

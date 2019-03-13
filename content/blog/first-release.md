@@ -20,4 +20,4 @@ time you want to log into the bitsnet, don't open a browser, open a terminal.
 
 -ut
 
-link to app: [BitsnetLogin](https://utkarshme.github.io/BitsnetLogin/)
+link to app: [BitsnetLogin](https://coditva.github.io/BitsnetLogin/)

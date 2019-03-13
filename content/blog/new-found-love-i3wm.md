@@ -33,7 +33,7 @@ creativity!_
 
 <br>
 Here's what the setup looks like:<br>
-![My i3 setup](https://raw.githubusercontent.com/UtkarshMe/i3-config/master/screenshot.png "My i3 setup")
+![My i3 setup](https://raw.githubusercontent.com/coditva/i3-config/master/screenshot.png "My i3 setup")
 
 I would recommend using [i3-gaps](https://github.com/Airblader/i3) which is a
 fork of i3 with some enhancements like the gaps between windows.
@@ -45,7 +45,7 @@ muscle memory. I have my key bindings close to Vim which makes the task even
 more easier.
 
 I have put all the setup configuration
-[here](https://github.com/UtkarshMe/i3-config). Because I am never satisfied
+[here](https://github.com/coditva/i3-config). Because I am never satisfied
 with a configuration (hehe), I will keep updating it till I don't switch to
 another display manager.
 

@@ -70,4 +70,4 @@ add:        integer PLUS_SIGN integer
 
 The yacc file also contains the `main` function which calls `yyparse()` and a functions `yyerror(char *error)` which takes action according to the error. This is called by the generated parser when an error occurs while parsing.
 
-The code for my project can be found here: [github.com/UtkarshMe/Yaccing](https://github.com/UtkarshMe/Yaccing).
+The code for my project can be found here: [github.com/coditva/Yaccing](https://github.com/coditva/Yaccing).

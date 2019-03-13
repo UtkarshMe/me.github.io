@@ -10,7 +10,7 @@ categories:
 - project
 ---
 
-So we had this [assignment](https://github.com/UtkarshMe/Flexing) for our _Compilers Construction_ course to write a program to generated beautified HTML file for a given C program. The stupid approach is to write a lexical analyzer from scratch with might take ages. The intelligent (and accepted) approach is to use a lexical analyzer generator and this is where _Flex_ comes into picture.
+So we had this [assignment](https://github.com/coditva/Flexing) for our _Compilers Construction_ course to write a program to generated beautified HTML file for a given C program. The stupid approach is to write a lexical analyzer from scratch with might take ages. The intelligent (and accepted) approach is to use a lexical analyzer generator and this is where _Flex_ comes into picture.
 
 Flex is a FOSS alternative to the POSIX lexical analyzer generator _Lex_ and generates a lexical analyzer program from the vocabulary you specify for the language you're writing a compiler for.
 
@@ -71,4 +71,4 @@ input: nothing to do
 output: nothing to do
 ```
 
-You can find the code for the assignment [here](https://github.com/UtkarshMe/Flexing).
+You can find the code for the assignment [here](https://github.com/coditva/Flexing).

@@ -9,7 +9,7 @@ categories:
 ---
 
 Recently I was working on [a
-project](https://github.com/UtkarshMe/Synergy-linux) where I had decided to
+project](https://github.com/coditva/Synergy-linux) where I had decided to
 make the application extensible by use of plugins (or add-ons). A plugin is a
 piece of code which is not part of the core app and is not required for proper
 working of it; it provides with additional functionality and allows third-party
@@ -111,4 +111,4 @@ void plugin_myplugin_init(info_t *info)
 
 **Important note**: The plugins must be compiled with the compile-time flag `-fpic` and the linker flag `-shared`
 
-You can find my implementation of events and plugins in [this project](https://github.com/UtkarshMe/Synergy-linux).
+You can find my implementation of events and plugins in [this project](https://github.com/coditva/Synergy-linux).
