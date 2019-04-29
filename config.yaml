@@ -25,7 +25,6 @@ params:
   social_banner     : "img/logo.png"
   author            : "Utkarsh Maheshwari"
   description       : "Code is beautiful, if you have the eye for it."
-  email             : "coditva@gmail.com"
   copyright         : "Copyright © 2018 Utkarsh Maheshwari"
 
   dateform          : "Jan 2, 2006"
