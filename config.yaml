@@ -2,7 +2,7 @@ buildDrafts         : false
 canonifyurls        : true
 contentdir          : "content"
 
-baseURL             : "https://coditva.dev"
+baseURL             : "https://coditva.dev/"            # must end with "/"
 languageCode        : "en-US"
 title               : "Debug and stuff"
 author              : "Utkarsh Maheshwari"
