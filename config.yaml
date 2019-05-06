@@ -1,42 +1,47 @@
+baseURL             : "https://coditva.dev/"            # must end with "/"
+languageCode        : "en"
+title               : "Coditva | coditva.dev"
+author              : "coditva"
+googleAnalytics     : "UA-109205422-1"
+disqusshortname     : "utkarshme"
+
+theme               : "black-and-light"
+
+pygmentsCodefences  : true
+pygmentsStyle       : "tango"
+pygmentsOptions:
+  - "linenos"
+  - "noclasses"
+  - "full"
+
 buildDrafts         : false
 canonifyurls        : true
 contentdir          : "content"
 
-baseURL             : "https://coditva.dev/"            # must end with "/"
-languageCode        : "en-US"
-title               : "Debug and stuff"
-author              : "Utkarsh Maheshwari"
-googleAnalytics     : "UA-109205422-1"
-disqusshortname     : "utkarshme"
-pluralizelisttitles : false
-
-theme               : "cocoa-eh"
-
 taxonomies:
-  category          : "categories"
   tag               : "tags"
 
 permalinks:
   blog              : "blog/:slug/"
 
 params:
-  logofile          : "img/logo.png"
-  faviconfile       : "img/logo.png"
-  social_banner     : "img/logo.png"
-  author            : "Utkarsh Maheshwari"
-  description       : "Code is beautiful, if you have the eye for it."
-  copyright         : "Copyright © 2018 Utkarsh Maheshwari"
+  sitename          : "coditva.dev"
+  disableWebFonts   : false
 
-  dateform          : "Jan 2, 2006"
-  dateformfull      : "Mon Jan 2 2006 15:04:05 IST"
+menu:
+  main:
+    - name  : "home"
+      url   : "/"
+      weight: 1
 
-  latestpostcount   : 5
-  highlightjs       : true
-  progressively     : true
-  align_left        : false
-  small_banner_logo : false
-  posts_navigation  : true
+    - name  : "github"
+      url   : "https://github.com/coditva"
+      weight: 2
 
-  github            : "coditva"
-  linkedin          : "coditva"
-  twitter           : "coditva"
+    - name  : "twitter"
+      url   : "https://twitter.com/coditva"
+      weight: 3
+
+    - name  : "rss"
+      url   : "/index.xml"
+      weight: 4
