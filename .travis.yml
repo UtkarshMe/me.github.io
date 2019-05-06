@@ -5,8 +5,7 @@ addons:
         - hugo
 
 script:
-    - hugo -t cocoa-eh
-    - mv google359467a4de73152e.html public/
+    - hugo
 
 deploy:
     local-dir: public/
