@@ -30,14 +30,40 @@ params:
 
 menu:
   main:
-    - name  : "home"
-      url   : "/"
+    - name  : home
+      url   : /
       weight: 1
 
-    - name  : "about"
-      url   : "/me"
+    - name  : about
+      url   : /me
       weight: 2
 
-    - name  : "feed"
-      url   : "/index.xml"
+    - name  : feed
+      url   : /index.xml
+      weight: 3
+
+  social:
+    - name  : Mail
+      title : coditva@gmail.com
+      url   : mailto:coditva@gmail.com
+      weight: 1
+
+    - name  : GitHub
+      title : coditva
+      url   : https://github.com/coditva
+      weight: 2
+
+    - name  : Twitter
+      title : coditva
+      url   : https://twitter.com/coditva
+      weight: 3
+
+    - name  : Resume
+      title : pdf
+      url   : /resume.pdf
       weight: 4
+
+    - name  : PGP
+      title : 5A40E60FB40CDEBE
+      url   : https://pgp.mit.edu/pks/lookup?op=get&search=0x5A40E60FB40CDEBE
+      weight: 5
