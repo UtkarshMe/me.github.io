@@ -34,14 +34,10 @@ menu:
       url   : "/"
       weight: 1
 
-    - name  : "github"
-      url   : "https://github.com/coditva"
+    - name  : "about"
+      url   : "/me"
       weight: 2
 
-    - name  : "twitter"
-      url   : "https://twitter.com/coditva"
-      weight: 3
-
-    - name  : "rss"
+    - name  : "feed"
       url   : "/index.xml"
       weight: 4
