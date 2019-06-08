@@ -10,4 +10,4 @@ hugo --watch server     # start the server on localhost
 ```
 
 ### License
-[GPL v3](https://github.com/coditva/coditva.github.io/blob/master/LICENSE) &copy; Utkarsh Maheshwari
+[MIT &copy; Utkarsh Maheshwari](https://github.com/coditva/me.github.io/blob/master/LICENSE)
