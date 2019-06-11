@@ -1,13 +1,13 @@
-[![Build Status](https://travis-ci.org/coditva/me.github.io.svg?branch=master)](https://travis-ci.org/coditva/me.github.io)
+[![Build Status](https://travis-ci.org/coditva/blog.svg?branch=master)](https://travis-ci.org/coditva/blog)
 
-# My Github Page
-_Personal website, y'all!_
+# Coditva's Blog
 
-### Compiling
+### How to
 ```bash
-hugo                    # compile
-hugo --watch server     # start the server on localhost
+hugo new blog/blog-entry-name.md    # create a new blog entry
+hugo                                # compiles to public/
+hugo --watch server                 # starts a server on localhost:1313
 ```
 
 ### License
-[MIT &copy; Utkarsh Maheshwari](https://github.com/coditva/me.github.io/blob/master/LICENSE)
+[MIT &copy; Utkarsh Maheshwari](https://github.com/coditva/blog/blob/master/LICENSE)
