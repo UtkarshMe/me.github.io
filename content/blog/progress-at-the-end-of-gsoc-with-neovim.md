@@ -18,7 +18,6 @@ As we come to the end of three months of the coding extravaganza as a part of GS
 - **Grid based updates**<br/>
 [This post](/blog/window-grid-updates-in-neovim/) describes the grid-based updates in Neovim. The work for this is almost complete with tests and documentation in place.
 The progress and code for grid based updates can be found [here](https://github.com/neovim/neovim/pull/8455).
-
 - **Externalized wincmds**<br/>
 This builds up on the *Grid based updates*. The work for this is still a little unstable but seems ready to be tested out by the external UIs.
 The progress and code for external wincmds can be found [here](https://github.com/neovim/neovim/pull/8707).
@@ -27,7 +26,6 @@ The progress and code for external wincmds can be found [here](https://github.co
 ## Where to go from here
 
 - The above pull requests are not merged as of writing this post. My first priority would be to get them merged.
-
 - There are a number of elements which are yet to be externalized with *cursorline* and *messages* being the next choices. I have started some work on externalizing the *cursorline* which I will continue.
 
 
