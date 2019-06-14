@@ -65,5 +65,5 @@ menu:
 
     - name  : PGP
       title : 5A40E60FB40CDEBE
-      url   : https://pgp.mit.edu/pks/lookup?op=get&search=0x5A40E60FB40CDEBE
+      url   : http://keys.gnupg.net/pks/lookup?op=get&search=0x5A40E60FB40CDEBE
       weight: 5
