@@ -1,9 +1,8 @@
-baseURL             : "https://coditva.dev/"            # must end with "/"
+baseURL             : "https://coditva.github.io/" # must end with "/"
 languageCode        : "en"
-title               : "Coditva | coditva.dev"
+title               : "Coditva's Old Blog"
 author              : "coditva"
 googleAnalytics     : "UA-109205422-1"
-disqusshortname     : "utkarshme"
 
 theme               : "black-and-light"
 
@@ -25,7 +24,7 @@ permalinks:
   blog              : "blog/:slug/"
 
 params:
-  sitename          : "coditva.dev"
+  sitename          : "coditva.github.io"
   disableWebFonts   : false
 
 menu:
