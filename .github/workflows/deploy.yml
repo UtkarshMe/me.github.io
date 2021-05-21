@@ -1,0 +1,35 @@
+name: Deploy
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    name: Deploy to coditva.github.io
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          submodules: true
+
+      - name: Setup Hugo
+        run: sudo apt-get -y install hugo
+
+      - name: Build
+        run: hugo --minify
+
+      - name: Deploy
+        env:
+          TOKEN: ${{ secrets.PUSH_TOKEN }}
+          USER: "github-actions"
+        run: |
+          cd public
+          git init
+          git remote add origin https://$USER:$TOKEN@github.com/coditva/coditva.github.io
+          git config user.name $USER
+          git config user.email $USER@github.com
+          git add .
+          git commit --message "Deployed from coditva/blog"
+          git push --force --set-upstream origin master
