@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/coditva/blog.svg?branch=master)](https://travis-ci.org/coditva/blog)
+[![Deploy](https://github.com/coditva/blog/actions/workflows/deploy.yml/badge.svg)](https://github.com/coditva/blog/actions/workflows/deploy.yml)
 
 # Coditva's Blog
 
