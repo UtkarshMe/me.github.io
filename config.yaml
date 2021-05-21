@@ -2,7 +2,6 @@ baseURL             : "https://coditva.github.io/" # must end with "/"
 languageCode        : "en"
 title               : "Coditva's Old Blog"
 author              : "coditva"
-googleAnalytics     : "UA-109205422-1"
 
 theme               : "black-and-light"
 
